@@ -1,0 +1,19 @@
+{
+    "heroSection": {
+        "title": "Full Stack Web Developer",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+    },
+    "introSection": {
+        "title": "Lorem ipsum dolor sit amet",
+        "copy": "Duo cu euripidis tincidunt contentiones, nulla primis cum ad, audiam veritus facilisi vix id. Ius id suscipit insolens. Ridens gloriatur consequuntur quo te, mel falli facilisi argumentum ea.",
+        "myStack": {
+            "title": "My Stack"
+        }
+    },
+    "recentWorkSection": {
+        "title": "My recent work"
+    },
+    "clientsSection": {
+        "title": "I'm proud to have worked with"
+    }
+}

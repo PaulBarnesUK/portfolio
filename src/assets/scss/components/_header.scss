@@ -1,0 +1,125 @@
+.header {
+    background-color: $primaryColor;
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.5);
+    color: white;
+    height: $headerHeight;
+    padding: {
+        bottom : 1.25rem;
+        top: 1.25rem;
+    }
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    &__logo {
+        @extend .col-4;
+
+        align-items: center;
+        display: flex;
+    }
+
+    &__navHolder {
+        @extend .col-8;
+
+        display: flex;
+    }
+
+    // Bootstrap items
+    .container, .row {
+        height: 100%;
+    }
+}
+
+.menu {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav {
+    width: 100%;
+
+    &__link {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        font-weight: bold;
+        padding: 0 1.5rem;
+
+        a {
+            color: white;
+            text-decoration: none;
+            vertical-align: top;
+        }
+
+        &--bordered {
+            padding: 0;
+
+            a {
+                border: 2px solid white;
+                display: inline-block;
+                margin-left: 1.5rem;
+                padding: 0.85rem 1.25rem;
+            }
+        }    
+    }
+
+    &__links {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    &__mobile {
+        background-color: $primaryColor;
+        position: fixed;
+        top: $headerHeight;
+        transition: transform .3s;
+        transform: translateY(-100%);
+
+        .nav {
+            &__link {
+                display: block;
+                padding: 1rem 0;
+
+                &--bordered {
+                    a {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            &__links {
+                display: block;
+                text-align: center;
+                padding: 1.5rem;
+            }
+        }
+
+        &--open {
+            transform: translateY(0%);
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .nav {
+        &--desktop {
+            display: none;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        &--mobile {
+            display: none;
+        }
+    }
+}

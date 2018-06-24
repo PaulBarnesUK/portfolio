@@ -1,0 +1,40 @@
+{
+  "name": "paul-barnes-portfolio",
+  "description": "Paul Barnes Portfolio",
+  "version": "1.0.0",
+  "author": "Paul Barnes <paul@paul-barnes.me.uk>",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "classnames": "^2.2.6",
+    "gatsby": "^1.9.247",
+    "gatsby-image": "^1.0.54",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-sharp": "^1.6.48",
+    "gatsby-transformer-javascript-static-exports": "^1.3.11",
+    "gatsby-transformer-json": "^1.0.19",
+    "gatsby-transformer-sharp": "^1.6.27",
+    "hamburgers": "^0.9.3",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-source-filesystem": "^1.5.38",
+    "normalize-scss": "^7.0.1",
+    "prettier": "^1.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
