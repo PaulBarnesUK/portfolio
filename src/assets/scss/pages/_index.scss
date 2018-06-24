@@ -89,6 +89,10 @@
             color: $secondaryFontColor;
         }
 
+        &--noPadding {
+            padding: 0;
+        }
+
         &--overlayed {
             padding: {
                 bottom: 18rem;

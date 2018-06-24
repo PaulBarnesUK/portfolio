@@ -14,7 +14,7 @@ const IndexPage = ({data: { dataJson: data }}) => (
       <div className="portrait">
         <img src={portraitImage} alt="test"/>
       </div>
-      <div className="section">
+      <div className="section section--noPadding">
         <div className="section__content section__content--standard">
           <div className="section__title">
             {data.heroSection.title}

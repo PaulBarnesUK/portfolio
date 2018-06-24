@@ -3,9 +3,7 @@
     border-radius: 10px;
     color: $secondaryFontColor;
     padding: 2rem;
-    position: absolute;
     transform: translateY(-50%);
-    width: 100%;
 
     &__copy, &__button {
         @extend .col-md-6;
