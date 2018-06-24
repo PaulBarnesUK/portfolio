@@ -24,18 +24,18 @@ const Stack = () => {
                 <div className="panel__wrapper">
                     <div className="panel__icon" dangerouslySetInnerHTML={stack.icon}>
                     </div>
-                    <div className="panel__title">
+                    <h3 className="panel__title">
                         {stack.title}
-                    </div>
-                    <div className="panel__subTitle">
+                    </h3>
+                    <h4 className="panel__subTitle">
                         {stack.languages.title}
-                    </div>
+                    </h4>
                     <div className="panel__list">
                         {languages}
                     </div>
-                    <div className="panel__subTitle">
+                    <h4 className="panel__subTitle">
                         {stack.frameworks.title}
-                    </div>
+                    </h4>
                     <div className="panel__list">
                         {frameworks}
                     </div>

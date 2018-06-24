@@ -14,16 +14,16 @@ const IndexPage = ({data: { dataJson: data }}) => (
       <div className="portrait">
         <img src={portraitImage} alt="test"/>
       </div>
-      <div className="section section--noPadding">
+      <section className="section section--noPadding">
         <div className="section__content section__content--standard">
-          <div className="section__title">
+          <h1 className="section__title">
             {data.heroSection.title}
-          </div>
+          </h1>
           <div className="section__copy">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iure amet, inventore ab sint praesentium velit quibusdam, id consectetur, ducimus porro labore consequatur? Laudantium, sed fugiat. Numquam nemo velit soluta?
           </div>
         </div>
-      </div>
+      </section>
     </Hero>
     <HomeIntro title={data.introSection.title} copy={data.introSection.copy} myStackTitle={data.introSection.myStack.title} />
     <Stack />

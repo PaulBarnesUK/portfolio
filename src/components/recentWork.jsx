@@ -4,16 +4,14 @@ import BrandPanels from './home/brandPanels';
 class RecentWork extends React.Component {
     render() {
         return (
-            <div className="recentWork">
+            <section className="section section--recentWork">
                 <div className="container">
-                    <div className="intro">
-                        <div className="intro__title">
-                            {this.props.title}
-                        </div>
-                    </div>
+                    <h2 className="section__title">
+                        {this.props.title}
+                    </h2>
                     <BrandPanels />
                 </div>
-            </div>
+            </section>
         )
     }
 }

@@ -99,6 +99,14 @@
                 top: 5rem;
             };
         }
+
+        &--recentWork {
+            .section {
+                &__title {
+                    margin-bottom: 4.5rem;
+                }
+            }
+        }
     }
 
     .stack {
