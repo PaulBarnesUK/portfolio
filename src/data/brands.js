@@ -7,7 +7,7 @@ export default [
             "color": [
                 "#f80000"
             ],
-            "opacity": 0.3
+            "opacity": 0.25
         }
     },
     {

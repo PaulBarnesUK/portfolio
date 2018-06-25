@@ -93,6 +93,10 @@
             padding: 0;
         }
 
+        &--noTopPadding {
+            padding-top: 0;
+        }
+
         &--overlayed {
             padding: {
                 bottom: 18rem;
