@@ -7,7 +7,6 @@ import Stack from '../components/stack'
 import Testimonials from '../components/testimonials'
 import Cta from '../components/cta'
 import Clients from '../components/clients'
-import Footer from '../components/footer'
 import portraitImage from '../assets/images/profile.png'
 
 const IndexPage = ({data: { dataJson: data }}) => (
@@ -33,7 +32,6 @@ const IndexPage = ({data: { dataJson: data }}) => (
     <Testimonials />
     <Cta />
     <Clients title={data.clientsSection.title} />
-    <Footer />
   </div>
 )
 

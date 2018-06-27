@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import '../assets/scss/style.scss'
-import Header from './../components/header.jsx';
+import Header from './../components/header';
+import Footer from './../components/footer'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -18,6 +19,7 @@ const Layout = ({ children, data }) => (
     <div className="page">
       {children()}
     </div>
+    <Footer />
   </div>
 )
 
