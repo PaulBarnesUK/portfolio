@@ -11,11 +11,14 @@
 @import 'base';
 @import 'page';
 
+// Layout component styles
+@import 'components/header';
+@import 'components/footer';
+
 // Component styles
 @import 'components/brand';
 @import 'components/button';
 @import 'components/cta';
-@import 'components/header';
 @import 'components/hero';
 @import 'components/hamburgers/hamburgers';
 @import 'components/panel';
