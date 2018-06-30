@@ -78,6 +78,7 @@
         top: $headerHeight;
         transition: transform .3s;
         transform: translateY(-100%);
+        z-index: 3;
 
         .nav {
             &__link {
