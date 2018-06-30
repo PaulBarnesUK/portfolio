@@ -4,6 +4,47 @@
 
         text-align: center;
 
+        .cta {
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transform: none;
+            transition: all .3s;
+            opacity: 0;
+
+            &__button {
+                @extend .col-12;
+
+                a {
+                    font-size: 1.25rem;
+                    padding: 0.75rem 1.5rem;
+                }
+            }
+
+            &__copy {
+                @extend .col-12;
+
+                font-size: 1.25rem;
+            }
+
+            &__link {
+                font-size: 1.5rem;
+            }
+
+            &__wrapper {
+                @extend .col-12;
+
+                margin-top: 2rem;
+            }
+        }
+
         &__background {
             background: {
                 position: center;
@@ -16,6 +57,8 @@
             position: absolute;
             top: 0;
             left: 0;
+            transition: all .3s;
+            z-index: 2;
         }
 
         &__content {
@@ -31,6 +74,8 @@
         }
 
         &__logo {
+            transition: all .3s;
+
             img {
                 height: 40px;
                 max-width: 100%;
@@ -42,8 +87,31 @@
             border-radius: 10px;
             display: flex;
             height: 240px;
+            overflow: hidden;
             padding: 2rem;
             position: relative;
+            transition: all .3s;
+        }
+
+        &:hover {
+            .cta {
+                opacity: 1;
+
+                &__link {
+                    z-index: 2;
+                }
+            }
+
+            .brand {
+                &__background, &__logo {
+                    transform: scale(1.2);
+                    opacity: 0 !important;
+                }
+
+                &__logo {
+                    transform: scale(1.1);
+                }
+            }
         }
 
         &--oracle {

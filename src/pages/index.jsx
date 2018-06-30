@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+
+// Components
 import Hero from '../components/hero'
 import HomeIntro from '../components/home/intro'
 import RecentWork from '../components/recentWork'
@@ -7,7 +9,10 @@ import Stack from '../components/stack'
 import Testimonials from '../components/testimonials'
 import Cta from '../components/cta'
 import Clients from '../components/clients'
+
+// Assets
 import portraitImage from '../assets/images/profile.png'
+import chevron from '../assets/images/svg/chevron.svg'
 
 const IndexPage = ({data: { dataJson: data }}) => (
   <div className="index">
@@ -25,6 +30,9 @@ const IndexPage = ({data: { dataJson: data }}) => (
           </div>
         </div>
       </section>
+      <div className="chevron">
+        <img src={chevron} alt="Read More"/>
+      </div>
     </Hero>
     <HomeIntro title={data.introSection.title} copy={data.introSection.copy} myStackTitle={data.introSection.myStack.title} />
     <Stack />

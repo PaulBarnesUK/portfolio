@@ -5,7 +5,9 @@ class Clients extends React.Component {
     clients = clientsData.map((client, index) => {
         return (
             <div className="client" key={index}>
-                <img src={client.logo} alt={client.name}/>
+                <a href={client.link} target="_blank">
+                    <img src={client.logo} alt={client.name}/>
+                </a>
             </div>
         )   
     })

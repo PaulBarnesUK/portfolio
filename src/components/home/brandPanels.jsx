@@ -1,6 +1,9 @@
 import React from 'react'
-import brands from '../../data/brands'
 import classNames from 'classnames'
+import Link from 'gatsby-link'
+import {TimelineMax, Power1} from 'gsap'
+
+import brands from '../../data/brands'
 
 export const brandsList = brands.map((brand, index) => {
     let tileStyle = {};
@@ -24,18 +27,49 @@ export const brandsList = brands.map((brand, index) => {
                     <div className="brand__logo">
                         <img src={brand.logo} alt={brand.name} />
                     </div>
-                    <div className="brand__cta">
-                        <div className="button">
-                            view project
+                </div>
+                <div className="cta">
+                    <div className="cta__copy">
+                        {brand.copy}
+                    </div>
+                    <div className="cta__wrapper">
+                        <div className="cta__button">
+                            <Link to="/" className="cta__link">
+                                View Projects
+                            </Link>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="brand__ctaWrapper">    
+                
             </div>
         </div>
     )
 })
 
 class BrandPanels extends React.Component {
+    animateBackendIcon() {
+        const animation = new TimelineMax({
+            repeat: -1,
+            repeatDelay: 1,
+            yoyo: true
+        })
+
+        animation.to('#backendBar', 1.5, {
+            x: -275,
+            ease: Power1.easeInOut
+        }, 0)
+        .to('#backendClipPathRect', 1.5, {
+            x: -250,
+            ease: Power1.easeInOut
+        }, 0.05)
+    }
+
+    componentDidMount() {
+        this.animateBackendIcon()
+    }
+
     render() {
         return (
             <div className="brands">
