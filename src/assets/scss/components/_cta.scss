@@ -24,4 +24,18 @@
             text-decoration: none;
         }
     }
+
+    @include media-breakpoint-down(sm) {
+        &__button {
+            font-size: 1.5rem;
+
+            a {
+                padding: 1rem 2rem;
+            }
+        }
+
+        &__copy {
+            margin-bottom: 2rem;
+        }
+    }
 }
