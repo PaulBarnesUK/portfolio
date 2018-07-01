@@ -1,10 +1,20 @@
 @font-face {
     font-family: 'roboto';
-    src: '../../fonts/roboto/Roboto-Regular.ttf' format('truetype');
+    src: '../../fonts/roboto/Roboto-Regular-webfont.eot';
+    src: '../../fonts/roboto/Roboto-Regular-webfont.eot?#iefix' format('embedded-opentype'),
+         '../../fonts/roboto/Roboto-Regular-webfont.woff2' format('woff2'),
+         '../../fonts/roboto/Roboto-Regular-webfont.woff' format('woff'),
+         '../../fonts/roboto/Roboto-Regular-webfont.ttf' format('truetype'),
+         '../../fonts/roboto/Roboto-Regular-webfont.svg#robotoregular' format('svg');
 }
 
 @font-face {
     font-family: 'roboto';
-    src: '../../fonts/roboto/Roboto-Bold.ttf' format('truetype');
+    src: '../../fonts/roboto/Roboto-Bold-webfont.eot';
+    src: '../../fonts/roboto/Roboto-Bold-webfont.eot?#iefix' format('embedded-opentype'),
+         '../../fonts/roboto/Roboto-Bold-webfont.woff2' format('woff2'),
+         '../../fonts/roboto/Roboto-Bold-webfont.woff' format('woff'),
+         '../../fonts/roboto/Roboto-Bold-webfont.ttf' format('truetype'),
+         '../../fonts/roboto/Roboto-Bold-webfont.svg#robotobold' format('svg');
     font-weight: bold;
 }
