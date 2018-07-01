@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import classNames from 'classnames'
+import Logo from './logo'
 
 class Header extends React.Component {
   constructor() {
@@ -39,7 +40,7 @@ class Header extends React.Component {
           <div className="container">
             <div className="row">
               <div className="header__logo">
-                logo
+                <Logo />
               </div>
               <div className="header__navHolder">
                 <div className="nav nav--desktop">

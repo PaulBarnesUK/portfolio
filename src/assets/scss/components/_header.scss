@@ -17,6 +17,10 @@
 
         align-items: center;
         display: flex;
+
+        .logo {
+            padding-left: 15px;
+        }
     }
 
     &__navHolder {

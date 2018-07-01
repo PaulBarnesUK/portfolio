@@ -1,4 +1,6 @@
 import React from 'react'
+import Logo from './logo'
+
 import socialData from '../data/social'
 
 class Footer extends React.Component {
@@ -18,9 +20,7 @@ class Footer extends React.Component {
         return (
             <footer className="section section--bgColoured">
                 <div className="container">
-                    <div className="logo">
-                        logo
-                    </div>
+                    <Logo />
                     <div className="socials">
                         {this.socials}
                     </div>
