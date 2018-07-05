@@ -26,7 +26,7 @@ class ContactForm extends React.Component {
                         </div>
                         <div className="form__group form__group--fullWidth">
                             <div className="form__wrapper">
-                                <textarea name="email" type="email" />
+                                <textarea name="message" required />
                                 <span className="form__bar"></span>
                                 <label>Message</label>
                             </div>
