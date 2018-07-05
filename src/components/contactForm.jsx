@@ -9,7 +9,7 @@ class ContactForm extends React.Component {
                     <div className="section__copy">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus quod earum voluptatem facilis molestiae expedita nostrum rerum harum ab delectus itaque inventore illo error, a exercitationem! Suscipit, odio molestias.
                     </div>
-                    <div className="form" name="contact" method="post" data-netlify="true">
+                    <form className="form" name="contact" method="post" data-netlify="true">
                         <div className="form__group">
                             <div className="form__wrapper">
                                 <input name="name" type="text" required />
@@ -36,7 +36,7 @@ class ContactForm extends React.Component {
                                 Submit
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         )
