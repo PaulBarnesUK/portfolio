@@ -8,4 +8,13 @@
     &__content {
         @extend .container;
     }
+    
+    .portrait {
+        margin-bottom: 3rem;
+        text-align: center;
+
+        img {
+            max-width: 50%;
+        }
+    }
 }

@@ -40,7 +40,9 @@ class Header extends React.Component {
           <div className="container">
             <div className="row">
               <div className="header__logo">
-                <Logo />
+                <Link to="/">
+                  <Logo />
+                </Link>
               </div>
               <div className="header__navHolder">
                 <div className="nav nav--desktop">
@@ -56,7 +58,7 @@ class Header extends React.Component {
                       </Link>
                     </div>
                     <div className="nav__link nav__link--bordered">
-                      <Link to="/">
+                      <Link to="/get-in-touch">
                         Get in touch.
                       </Link>
                     </div>

@@ -1,0 +1,87 @@
+.form {
+    @extend .row;
+
+    &__copy {
+        @extend .col-lg-8, .col-md-10;
+
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    &__bar {
+        position: relative;
+        display: block;
+        width: 100%;
+        &:before {
+            content: '';
+            height: 4px;
+            width: 0;
+            bottom: 0px;
+            position: absolute;
+            background: $primaryColor;
+            transition: all .3s;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+    }
+
+    &__group {
+        @extend .col-md-6;
+
+        &--fullWidth {
+            @extend .col-md-12;
+        }
+    }
+
+    &__submit {
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    &__wrapper {
+        position: relative;
+        margin: 1.5rem 0;
+    }
+
+    textarea {
+        min: {
+            height: 10rem;
+            width: 100%;
+        }
+    }
+
+    input,
+    textarea {
+        background: none;
+        color: rgba($tertiaryColor, 0.6);
+        font-size: 1.25rem;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid rgba($tertiaryColor, 0.6);
+        &:focus {
+            outline: none;
+        }
+        &:focus~label,
+        &:valid~label {
+            top: -1rem;
+            font-size: 0.9rem;
+            color: $primaryColor;
+        }
+        &:focus~.form__bar:before {
+            width: 100%;
+        }
+    }
+    label {
+        color: rgba($tertiaryColor, 0.6);
+        font-size: 1.25rem;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: all .3s;
+    }
+}

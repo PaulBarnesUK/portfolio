@@ -9,17 +9,15 @@ import Stack from '../components/stack'
 import Testimonials from '../components/testimonials'
 import Cta from '../components/cta'
 import Clients from '../components/clients'
+import Portrait from './../components/portrait'
 
 // Assets
-import portraitImage from '../assets/images/profile.png'
 import chevron from '../assets/images/svg/chevron.svg'
 
 const IndexPage = ({data: { dataJson: data }}) => (
   <div className="index">
     <Hero>
-      <div className="portrait">
-        <img src={portraitImage} alt="test"/>
-      </div>
+      <Portrait/>
       <section className="section section--noPadding">
         <div className="section__content section__content--standard">
           <h1 className="section__title">

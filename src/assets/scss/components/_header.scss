@@ -65,6 +65,14 @@
                 display: inline-block;
                 margin-left: 1.5rem;
                 padding: 0.85rem 1.25rem;
+                transition: all .3s;
+            }
+
+            &:hover {
+                a {
+                    background-color: $secondaryColor;
+                    color: $tertiaryFontColor;
+                }
             }
         }    
     }
