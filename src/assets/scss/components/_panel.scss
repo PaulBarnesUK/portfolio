@@ -11,6 +11,19 @@
             fill: $primaryColor;
             width: 80%;
         }
+
+        &--small {
+            padding: 0 15px;
+
+            @include media-breakpoint-up(md) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__icons {
+        display: flex;
+        margin-top: 2rem;
     }
 
     &__list {
@@ -41,6 +54,21 @@
         margin: 0 auto;
         max-width: 400px;
         padding: 2rem 6rem;
+
+        &--noMaxWidth {
+            max-width: none;
+        }
+    }
+
+    &--fullWidth {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    &--overlapping {
+        .panel__wrapper {
+            transform: translateY(-50%);
+        }
     }
 
     @include media-breakpoint-down(md) {

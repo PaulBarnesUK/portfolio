@@ -42,7 +42,7 @@
         color: $secondaryFontColor;
     }
 
-    &--noPadding {
+    &--noPadding, &--withFloatedPanel {
         padding: 0;
     }
 
@@ -62,6 +62,12 @@
             &__title {
                 margin-bottom: 4.5rem;
             }
+        }
+    }
+
+    &--withFloatedPanel {
+        & + .section {
+            padding-top: 0;
         }
     }
 }

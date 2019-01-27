@@ -1,5 +1,4 @@
 import React from 'react'
-import Testimonials from './testimonials';
 
 class ContactForm extends React.Component {
     render() {

@@ -5,7 +5,7 @@ class Portrait extends React.Component {
     render() {
         return (
             <div className="portrait">
-                <img src={portraitImage} alt="test"/>
+                <img src={portraitImage} height="234" width="234" alt="test"/>
             </div>
         )
     }
