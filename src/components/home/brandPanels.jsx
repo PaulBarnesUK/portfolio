@@ -18,32 +18,34 @@ export const brandsList = brands.map((brand, index) => {
 
     return (
         <div className={brandClasses} key={index}>
-            <div className="brand__wrapper" style={tileStyle}>
-                <div className="brand__background" style={{
-                    backgroundImage: `url(${brand.image})`,
-                    opacity: brand.tile.opacity
-                }}></div>
-                <div className="brand__content">
-                    <div className="brand__logo">
-                        <img src={brand.logo} alt={brand.name} />
+            <Link to="/">
+                <div className="brand__wrapper" style={tileStyle}>
+                    <div className="brand__background" style={{
+                        backgroundImage: `url(${brand.image})`,
+                        opacity: brand.tile.opacity
+                    }}></div>
+                    <div className="brand__content">
+                        <div className="brand__logo">
+                            <img src={brand.logo} alt={brand.name} />
+                        </div>
                     </div>
-                </div>
-                <div className="cta">
-                    <div className="cta__copy">
-                        {brand.copy}
-                    </div>
-                    <div className="cta__wrapper">
-                        <div className="cta__button">
-                            <Link to="/" className="cta__link">
-                                View Projects
-                            </Link>
+                    <div className="cta">
+                        <div className="cta__copy">
+                            {brand.copy}
+                        </div>
+                        <div className="cta__wrapper">
+                            <div className="cta__button">
+                                <span className="cta__link">
+                                    View Projects
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="brand__ctaWrapper">    
-                
-            </div>
+                <div className="brand__ctaWrapper">    
+                    
+                </div>
+            </Link>
         </div>
     )
 })
