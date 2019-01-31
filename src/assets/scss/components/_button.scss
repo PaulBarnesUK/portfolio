@@ -12,4 +12,8 @@
         background-color: $primaryColor;
         color: $secondaryColor;
     }
+
+    &--fade-in {
+        opacity: 0;
+    }
 }

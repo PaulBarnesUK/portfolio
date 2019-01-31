@@ -62,6 +62,10 @@
         color: $secondaryFontColor;
     }
 
+    &--fullViewport {
+        min-height: calc(100vh - #{$headerHeight});
+    }
+
     &--noPadding, &--withFloatedPanel {
         padding: 0;
     }
