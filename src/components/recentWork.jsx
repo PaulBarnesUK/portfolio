@@ -9,7 +9,7 @@ class RecentWork extends React.Component {
                     <h2 className="section__title">
                         {this.props.title}
                     </h2>
-                    <BrandPanels />
+                    <BrandPanels projects={this.props.projects} />
                 </div>
             </section>
         )

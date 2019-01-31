@@ -1,10 +1,10 @@
 export default [
     {
         name: 'Oracle',
-        copy: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+        copy: `Single Page Application built with Vue.js`,
         cta: {
-            copy: `View Projects`,
-            link: ``
+            copy: `View Project`,
+            link: `/my-work/oracle/internship-experience`
         },
         logo: require('../assets/images/svg/oracle-logo.svg'),
         image: require('../assets/images/oracle-bg.jpg'),
@@ -33,10 +33,10 @@ export default [
     },
     {
         name: 'Appliance World',
-        copy: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+        copy: `eCommerce build, built with Zend PHP Framework`,
         cta: {
-            copy: `View Projects`,
-            link: ``
+            copy: `View Project`,
+            link: `/my-work/appliance-world/website-build`
         },
         logo: require('../assets/images/svg/appliance-world-logo.svg'),
         image: require('../assets/images/appliance-world-bg.jpg'),

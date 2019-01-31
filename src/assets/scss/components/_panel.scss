@@ -13,6 +13,7 @@
         }
 
         &--small {
+            flex: 0 0 12.5%;
             padding: 0 15px;
 
             @include media-breakpoint-up(md) {
@@ -23,6 +24,7 @@
 
     &__icons {
         display: flex;
+        justify-content: center;
         margin-top: 2rem;
     }
 

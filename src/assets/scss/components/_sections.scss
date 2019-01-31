@@ -21,6 +21,26 @@
         }
     }
 
+    &__image {
+        margin: 1rem 0;
+
+        img {
+            max-width: 600px;
+        }
+
+        &--small {
+            img {
+                max-width: 300px;
+            }
+        }
+    }
+
+    &__link {
+        a {
+            text-decoration: none;
+        }
+    }
+
     &__title {
         font-size: 2.25rem;
         font-weight: bold;
