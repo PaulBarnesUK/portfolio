@@ -2,7 +2,7 @@ export default [
     {
         id: 1,
         name: 'Oracle',
-        copy: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+        copy: `SPA built with Vue.js`,
         cta: {
             copy: `View Project`,
             link: `/my-work/oracle/internship-experience`
@@ -20,10 +20,10 @@ export default [
     {
         id: 2,
         name: 'Sage',
-        copy: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+        copy: `SPA built with Vue.js`,
         cta: {
             copy: `View Project`,
-            link: ``
+            link: `/my-work/sage/payroll-solvers`
         },
         logo: require('../assets/images/svg/sage-logo.svg'),
         image: require('../assets/images/sage-bg.jpg'),
@@ -38,7 +38,7 @@ export default [
     {
         id: 3,
         name: 'Appliance World',
-        copy: `Website build for eCommerce retailer Appliance World.`,
+        copy: `eCommerce website, built on Zend PHP framework`,
         cta: {
             copy: `View Project`,
             link: `/my-work/appliance-world/website-build`

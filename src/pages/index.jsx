@@ -14,6 +14,9 @@ import Portrait from './../components/portrait'
 // Assets
 import chevron from '../assets/images/svg/chevron.svg'
 
+// Data
+import projects from '../data/projects'
+
 class IndexPage extends React.Component {
   animate() {
     const img = document.querySelector('.portrait img');
@@ -61,7 +64,7 @@ class IndexPage extends React.Component {
         </Hero>
         <HomeIntro title={data.introSection.title} copy={data.introSection.copy} myStackTitle={data.introSection.myStack.title} />
         <Stack />
-        <RecentWork title={data.recentWorkSection.title} />
+        <RecentWork projects={projects.slice(0, 3)} title={data.recentWorkSection.title} />
         <Testimonials />
         <Cta />
         <Clients title={data.clientsSection.title} />

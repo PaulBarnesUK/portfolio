@@ -16,8 +16,22 @@
             flex: 0 0 12.5%;
             padding: 0 15px;
 
-            @include media-breakpoint-up(md) {
+            svg {
+                max-width: 80px;
+            }
+
+            @include media-breakpoint-up(lg) {
                 margin-bottom: 0;
+            }
+
+            @include media-breakpoint-down(md) {
+                flex: 0 0 33.3333%;
+                max-width: 33.3333%;
+            }
+
+            @include media-breakpoint-down(sm) {
+                flex: 0 0 100%;
+                max-width: 100%;
             }
         }
     }
@@ -26,6 +40,11 @@
         display: flex;
         justify-content: center;
         margin-top: 2rem;
+
+        @include media-breakpoint-down(md) {
+            padding: 0 3rem;
+            flex-wrap: wrap;
+        }
     }
 
     &__list {
@@ -59,6 +78,10 @@
 
         &--noMaxWidth {
             max-width: none;
+
+            @include media-breakpoint-down(md) {
+                padding: 2rem;
+            }
         }
     }
 
@@ -70,6 +93,10 @@
     &--overlapping {
         .panel__wrapper {
             transform: translateY(-50%);
+
+            @include media-breakpoint-down(md) {
+                transform: translateY(-6rem);
+            }
         }
     }
 
