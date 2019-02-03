@@ -1,9 +1,9 @@
 import { bootstrap, css, html, javascript, sass, vue } from '../../../svgData/technologies'
-import showcase from '../../../../assets/images/oracle-internship-experience-showcase.png'
+import showcase from '../../../../assets/images/sage-payroll-solvers-tool.png'
 import logo from '../../../../assets/images/svg/sage-logo-green.svg'
 
 export default {
-    projectId: 3,
+    projectId: 2,
     client: {
         logo: {
             image: logo,
@@ -16,10 +16,10 @@ export default {
             alt: ``,
         },
         title: `Sage Payroll Solvers Tool`,
-        copy: `Extension`,
+        copy: `Single Page Application, built with Vue.js`,
         cta: {
             href: `http://sage.paul-barnes.me.uk`,
-            copy: `View Demo`
+            copy: `View Tool`
         }
     },
     content: {

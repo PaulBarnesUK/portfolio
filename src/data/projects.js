@@ -33,7 +33,7 @@ export default [
             ],
             opacity: 0.3
         },
-        tags: []
+        tags: ['spa', 'vue']
     },
     {
         id: 3,
@@ -57,7 +57,7 @@ export default [
     {
         id: 4,
         name: 'Appliance World',
-        copy: `Price spider`,
+        copy: `Price spider, built on the Laravel PHP framework`,
         cta: {
             copy: `View Project`,
             link: `/my-work/appliance-world/price-spider`
@@ -76,7 +76,7 @@ export default [
     {
         id: 5,
         name: 'Oracle',
-        copy: `Infographics`,
+        copy: `Animated Infographics`,
         cta: {
             copy: `View Project`,
             link: `/my-work/oracle/infographics`
@@ -94,7 +94,7 @@ export default [
     {
         id: 6,
         name: 'Appliance World',
-        copy: `Reporting System`,
+        copy: `Reporting system, built on the Laravel PHP framework`,
         cta: {
             copy: `View Project`,
             link: `/my-work/appliance-world/reporting-system`

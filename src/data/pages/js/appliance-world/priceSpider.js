@@ -16,16 +16,15 @@ export default {
             alt: ``,
         },
         title: `Price Spider`,
-        copy: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.`,
-        cta: {
-            href: `https://appliance-world.co.uk`,
-            copy: `Visit Website`
-        }
+        copy: `Autonomous web crawler built on the Laravel PHP framework. Basic command-line interface
+        for ad-hoc data extraction where required.`
     },
     content: {
         copy: [
-            `No ludus eripuit duo. Ad latine diceret expetendis qui, sed feugiat eruditi conceptam ne. Mea agam labitur forensibus an, per putant tibique conceptam an, aeque ornatus quaerendum ut pro. Nibh choro numquam sea ex. Ut animal vidisse quo, sit idque libris patrioque cu.`,
-            `Eu sit legendos sensibus, purto nullam ex pro. Cu quas inani possit cum, id quo ridens utroque volumus. Mel case nominati id. Quo suas constituto ut, sed illud augue accusam an. Decore offendit vulputate in eos.`
+            `After having tried several off-the-shelf price crawler solutions, Appliance World had not found
+            any that they had found suitable. I was tasked with creating a bespoke solution, tailored to the business' needs.
+            First implemented in December 2015, the data harvested by the price spider is still used daily to inform business decisions
+            and set product prices.`
         ]
     },
     technologies: [
@@ -38,5 +37,5 @@ export default {
             image: laravel
         }
     ],
-    tags: ['website-build']
+    tags: ['appliance-world', 'laravel']
 }

@@ -16,12 +16,13 @@ export default {
             alt: ``,
         },
         title: `Website Build`,
-        copy: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.`,
+        copy: `Redesign and build of eCommerce website, based on Zend PHP Framework.`,
         cta: {
             href: `https://appliance-world.co.uk`,
             copy: `Visit Website`
         }
     },
+    
     content: {
         copy: [
             `One of my first major projects at Appliance World was to perform a 
