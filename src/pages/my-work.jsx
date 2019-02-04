@@ -7,7 +7,7 @@ import projects from '../data/projects'
 class MyWorkPage extends React.Component {
     render() {
         return (
-            <RecentWork title="My Work" projects={projects} />
+            <RecentWork title="My Work" projects={projects} fade={true} />
         )
     }
 }

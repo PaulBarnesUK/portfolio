@@ -21,7 +21,10 @@ class BrandPanels extends React.Component {
                 tileStyle.backgroundColor = brand.tile.color[0]
             }
         
-            const brandClasses = classNames(`brand`, `brand--${brand.name.replace(' ', '-').toLowerCase()}`)
+            const brandClasses = classNames(
+                `brand`,
+                `brand--${brand.name.replace(' ', '-').toLowerCase()}`
+            )
         
             return (
                 <div className={brandClasses} key={index}>
@@ -81,7 +84,7 @@ class BrandPanels extends React.Component {
 
     render() {
         return (
-            <div className="brands">
+            <div className={`brands ${this.props.fade ? 'fade-in' : ''}`}>
                 <div className="row">
                     {this.brandsList()}
                 </div>
