@@ -40,7 +40,8 @@ export default [
             list: [
                 "Laravel",
                 "Express",
-                "Wordpress"
+                "Wordpress",
+                "WooCommerce"
             ]
         }
     },

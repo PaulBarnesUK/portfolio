@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 const Cta = () => {
     return (
         <div className="container">
-            <div className="cta">
+            <div className="cta cta--rollover">
                 <div className="row">
                     <div className="cta__copy">
                         {cta.copy}

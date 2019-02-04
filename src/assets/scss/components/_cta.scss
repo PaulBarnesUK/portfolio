@@ -22,11 +22,6 @@
             display: inline-block;
             padding: 1rem 2rem;
             text-decoration: none;
-            transition: all .3s;
-
-            &:hover {
-                background-color: $primaryColor;
-            }
         }
     }
 
@@ -37,6 +32,18 @@
 
         &__copy {
             margin-bottom: 2rem;
+        }
+    }
+
+    &--rollover {
+        .cta__button {
+            a {
+                transition: all .3s;
+
+                &:hover {
+                    background-color: $primaryColor;
+                }
+            }            
         }
     }
 }

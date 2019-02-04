@@ -19,6 +19,10 @@
         &--alignLeft {
             text-align: left;
         }
+
+        &--noMargin {
+            margin: 0;
+        }
     }
 
     &__image {
@@ -79,6 +83,10 @@
         padding: 0;
     }
 
+    &--noBottomPadding {
+        padding-bottom: 0;
+    }
+
     &--noTopPadding {
         padding-top: 0;
     }
@@ -88,6 +96,10 @@
             bottom: 18rem;
             top: 5rem;
         };
+
+        &-small {
+            padding-bottom: 10rem;
+        }
     }
 
     &--recentWork {

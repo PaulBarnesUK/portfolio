@@ -9,7 +9,6 @@ class BrandPanels extends React.Component {
     constructor(props) {
         super(props);
         this.projects = this.props.projects || brands;
-        console.log(this.projects);
     }
 
     brandsList() {

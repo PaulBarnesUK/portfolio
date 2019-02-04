@@ -16,7 +16,7 @@ export default {
             alt: ``,
         },
         title: `Website Build`,
-        copy: `Redesign and build of eCommerce website, based on Zend PHP Framework.`,
+        copy: `Redesign and build of eCommerce website, built on Zend PHP Framework.`,
         cta: {
             href: `https://appliance-world.co.uk`,
             copy: `Visit Website`

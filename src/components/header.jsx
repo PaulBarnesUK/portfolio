@@ -48,15 +48,10 @@ class Header extends React.Component {
                 <div className="nav nav--desktop">
                   <div className="nav__links">
                     <div className="nav__link">
-                      <Link to="/">
+                      <Link to="/my-work">
                         My work.
                       </Link>
                     </div>
-                    {/* <div className="nav__link">
-                      <Link to="/">
-                        Testimonials.
-                      </Link>
-                    </div> */}
                     <div className="nav__link nav__link--bordered">
                       <Link to="/get-in-touch">
                         Get in touch.
@@ -80,13 +75,8 @@ class Header extends React.Component {
         <div className={mobileNavClasses}>
           <div className="nav__links">
             <div className="nav__link">
-              <Link to="/">
+              <Link to="/my-work">
                 My work.
-              </Link>
-            </div>
-            <div className="nav__link">
-              <Link to="/">
-                Testimonials.
               </Link>
             </div>
             <div className="nav__link nav__link--bordered">
