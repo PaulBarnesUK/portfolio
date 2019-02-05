@@ -1,11 +1,11 @@
 {
     "heroSection": {
-        "title": "Full Stack Web Developer",
-        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        "title": "Hi, I'm Paul.",
+        "copy": "I'm a full-stack web developer living in Surrey, England."
     },
     "introSection": {
         "title": "Lorem ipsum dolor sit amet",
-        "copy": "Duo cu euripidis tincidunt contentiones, nulla primis cum ad, audiam veritus facilisi vix id. Ius id suscipit insolens. Ridens gloriatur consequuntur quo te, mel falli facilisi argumentum ea.",
+        "copy": "I have 4 years experience in web development, ranging from in-house work for an eCommerce business to work with digital and creative agencies.",
         "myStack": {
             "title": "My Stack"
         }

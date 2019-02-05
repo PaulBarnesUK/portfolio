@@ -1,8 +1,8 @@
 export default [
     {
-        name: 'Dissimilar',
-        link: 'http://wearedissimilar.co.uk/',
-        logo: require('../assets/images/svg/dissimilar-logo.svg')
+        name: 'Evaporate',
+        link: 'https://evaporate.tech/',
+        logo: require('../assets/images/svg/evaporate-logo.svg')
     },
     {
         name: 'MOI',

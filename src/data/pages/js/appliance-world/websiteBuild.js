@@ -64,5 +64,5 @@ export default {
             image: php 
         }
     ],
-    tags: ['appliance-world']
+    tags: ['appliance-world', 'ecommerce']
 }

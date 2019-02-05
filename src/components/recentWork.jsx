@@ -9,14 +9,20 @@ class RecentWork extends React.Component {
         timeline.set('.fade-in', {
             y: 50
         })
-        .staggerTo('.fade-in', 1, {
+        .to('h2.fade-in', 1, {
             opacity: 1,
             y: 0
-        }, 0.25)
+        })
+        .staggerTo('.brand.fade-in', 1, {
+            opacity: 1,
+            y: 0
+        }, 0.15, '-=0.75')
     }
 
     componentDidMount() {
-        this.animate()
+        if (this.props.fade) {
+            this.animate()
+        }
     }
 
     render() {

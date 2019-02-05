@@ -40,8 +40,7 @@ export default [
             list: [
                 "Laravel",
                 "Express",
-                "Wordpress",
-                "WooCommerce"
+                "Wordpress"
             ]
         }
     },
@@ -52,6 +51,7 @@ export default [
             title: "My setup:",
             list: [
                 "Webpack",
+                "Gulp",
                 "Babel",
                 "Sass",
                 "NPM",

@@ -1,13 +1,13 @@
-import { bootstrap, css, html, javascript, sass, vue } from '../../../svgData/technologies'
-import showcase from '../../../../assets/images/oracle-internship-experience-showcase.png'
-import logo from '../../../../assets/images/svg/oracle-logo-red.svg'
+import { bootstrap, wordpress, javascript, sass, php } from '../../../svgData/technologies'
+import showcase from '../../../../assets/images/quest-partnership-showcase.png'
+import logo from '../../../../assets/images/quest-partnership-logo.jpg'
 
 export default {
-    projectId: 1,
+    projectId: 7,
     client: {
         logo: {
             image: logo,
-            alt: `Oracle`
+            alt: `Quest Partnership`
         }
     },
     intro: {
@@ -15,17 +15,18 @@ export default {
             src: showcase,
             alt: ``,
         },
-        title: `Internship Experience`,
-        copy: `Single Page Application, built with Vue.js`,
+        title: `eCommerce Website`,
+        copy: `Built with WooCommerce, on top of Wordpress.`,
         cta: {
-            href: `http://work.paul-barnes.me.uk/oracle/intern-experience`,
-            copy: `View Online`
+            href: `https://questpartnership.co.uk/`,
+            copy: `View Website`
         }
     },
     content: {
         copy: [
             `A very successful campaign for Oracle, the Internship Experience was designed as an introduction to the company
-            for Oracle's 2018 group of interns, and was sent out as part of each individual's starter pack.`,
+            for Oracle's 2018 group of interns, and was sent out as part of each individual's starter pack. The feedback was resoundingly positive,
+            so much so that they are planning on extending the experience to future internship programmes.`,
             `Each page was designed to be an engaging experience, with parallax backgrounds and dynamic animations breaking the mould of a standard web page.`,
             `This was built with the Vue.js Single Page Application JavaScript framework, with Vuex for state management, and utilised a basic Sass skeleton,
             based on Bootstrap's grid library.`
@@ -33,8 +34,12 @@ export default {
     },
     technologies: [
         {
-            name: `Vue`,
-            image: vue 
+            name: `Wordpress`,
+            image: wordpress 
+        },
+        {
+            name: `PHP`,
+            image: php 
         },
         {
             name: `JavaScript`,
@@ -49,5 +54,5 @@ export default {
             image: sass
         }
     ],
-    tags: ['oracle', 'spa', 'vue']
+    tags: ['quest-partnership', 'ecommerce', 'php', 'woocommerce', 'wordpress']
 }

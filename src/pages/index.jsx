@@ -54,7 +54,7 @@ class IndexPage extends React.Component {
                 {data.heroSection.title}
               </h1>
               <div className="section__copy fade-in">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iure amet, inventore ab sint praesentium velit quibusdam, id consectetur, ducimus porro labore consequatur? Laudantium, sed fugiat. Numquam nemo velit soluta?
+                {data.heroSection.copy}
               </div>
             </div>
           </section>
@@ -64,7 +64,7 @@ class IndexPage extends React.Component {
         </Hero>
         <HomeIntro title={data.introSection.title} copy={data.introSection.copy} myStackTitle={data.introSection.myStack.title} />
         <Stack />
-        <RecentWork projects={projects.slice(0, 3)} title={data.recentWorkSection.title} />
+        <RecentWork projects={projects.filter(project => project.featured).slice(0, 3)} title={data.recentWorkSection.title} />
         <Testimonials />
         <Cta />
         <Clients title={data.clientsSection.title} />
@@ -78,6 +78,7 @@ export const query = graphql`
     dataJson {
       heroSection {
         title
+        copy
       }
       introSection {
         title

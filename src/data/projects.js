@@ -2,7 +2,7 @@ export default [
     {
         id: 1,
         name: 'Oracle',
-        copy: `SPA built with Vue.js`,
+        copy: `Online experience, built with Vue.js`,
         cta: {
             copy: `View Project`,
             link: `/my-work/oracle/internship-experience`
@@ -15,12 +15,13 @@ export default [
             ],
             opacity: 0.25
         },
-        tags: ['oracle', 'spa', 'vue']
+        tags: ['oracle', 'spa', 'vue'],
+        featured: true
     },
     {
         id: 2,
         name: 'Sage',
-        copy: `SPA built with Vue.js`,
+        copy: `Payroll quiz, built with Vue.js`,
         cta: {
             copy: `View Project`,
             link: `/my-work/sage/payroll-solvers`
@@ -33,7 +34,8 @@ export default [
             ],
             opacity: 0.3
         },
-        tags: ['spa', 'vue']
+        tags: ['spa', 'vue'],
+        featured: true
     },
     {
         id: 3,
@@ -52,7 +54,7 @@ export default [
             ],
             opacity: 0.15
         },
-        tags: ['website-build', 'appliance-world']
+        tags: ['website-build', 'appliance-world', 'ecommerce']
     },
     {
         id: 4,
@@ -71,12 +73,13 @@ export default [
             ],
             opacity: 0.15
         },
-        tags: ['appliance-world', 'laravel']
+        tags: ['appliance-world', 'laravel'],
+        hide: true
     },
     {
         id: 5,
         name: 'Oracle',
-        copy: `Animated Infographics`,
+        copy: `Animated infographics, built with JavaScript-based static site generator.`,
         cta: {
             copy: `View Project`,
             link: `/my-work/oracle/infographics`
@@ -108,6 +111,26 @@ export default [
             ],
             opacity: 0.15
         },
-        tags: ['laravel', 'appliance-world']
+        tags: ['laravel', 'appliance-world'],
+        hide: true
     },
+    {
+        id: 7,
+        name: 'Quest Partnership',
+        copy: `eCommerce website build. Built using WooCommerce.`,
+        cta: {
+            copy: `View Project`,
+            link: `/my-work/quest-partnership/ecommerce-website-build`
+        },
+        logo: require('../assets/images/quest-partnership-logo-white.png'),
+        image: require('../assets/images/quest-partnership-bg.jpg'),
+        tile: {
+            color: [
+                '#009de2'
+            ],
+            opacity: 0.15
+        },
+        tags: ['quest-partnership', 'ecommerce', 'php', 'woocommerce', 'wordpress'],
+        featured: true
+    }
 ]

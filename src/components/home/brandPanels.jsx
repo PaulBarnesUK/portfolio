@@ -23,7 +23,10 @@ class BrandPanels extends React.Component {
         
             const brandClasses = classNames(
                 `brand`,
-                `brand--${brand.name.replace(' ', '-').toLowerCase()}`
+                `brand--${brand.name.replace(' ', '-').toLowerCase()}`,
+                {
+                    'fade-in': this.props.fade
+                }
             )
         
             return (
@@ -84,7 +87,7 @@ class BrandPanels extends React.Component {
 
     render() {
         return (
-            <div className={`brands ${this.props.fade ? 'fade-in' : ''}`}>
+            <div className='brands'>
                 <div className="row">
                     {this.brandsList()}
                 </div>
