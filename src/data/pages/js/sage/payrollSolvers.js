@@ -18,8 +18,8 @@ export default {
         title: `Sage Payroll Solvers Tool`,
         copy: `Single Page Application, built with Vue.js`,
         cta: {
-            href: `http://sage.paul-barnes.me.uk`,
-            copy: `View Tool`
+            href: `http://payrollsolver.dev-moi.co.uk`,
+            copy: `View Online`
         }
     },
     content: {

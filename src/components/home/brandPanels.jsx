@@ -64,27 +64,6 @@ class BrandPanels extends React.Component {
         })
     }
 
-    animateBackendIcon() {
-        const animation = new TimelineMax({
-            repeat: -1,
-            repeatDelay: 1,
-            yoyo: true
-        })
-
-        animation.to('#backendBar', 1.5, {
-            x: -275,
-            ease: Power1.easeInOut
-        }, 0)
-        .to('#backendClipPathRect', 1.5, {
-            x: -250,
-            ease: Power1.easeInOut
-        }, 0.05)
-    }
-
-    componentDidMount() {
-        this.animateBackendIcon()
-    }
-
     render() {
         return (
             <div className='brands'>

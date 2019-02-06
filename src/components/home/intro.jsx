@@ -7,7 +7,7 @@ class HomeIntro extends React.Component {
                 <div className="container">
                     <div className="section__content section__content--standard">
                         <h2 className="section__title">
-                            Experience
+                            About Me
                         </h2>
                         <div className="section__copy">
                             <p>

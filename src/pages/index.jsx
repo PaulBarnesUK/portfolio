@@ -65,8 +65,8 @@ class IndexPage extends React.Component {
         <HomeIntro title={data.introSection.title} copy={data.introSection.copy} myStackTitle={data.introSection.myStack.title} />
         <Stack />
         <RecentWork projects={projects.filter(project => project.featured).slice(0, 3)} title={data.recentWorkSection.title} />
-        <Testimonials />
-        <Cta />
+        {/* <Testimonials />
+        <Cta /> */}
         <Clients title={data.clientsSection.title} />
       </div>
     )
