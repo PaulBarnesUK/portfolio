@@ -1,6 +1,6 @@
 import React from 'react'
 import stacksData from '../data/stack.js'
-import { TimelineMax } from 'gsap'
+import { TimelineMax, Back } from 'gsap'
 
 class Stack extends React.Component {
     animateBackendIcon() {
@@ -27,12 +27,21 @@ class Stack extends React.Component {
             yoyo: true
         })
 
-        animation.to('#computer-header', 1.5, {
+        animation.set('#computer-section', {
+            visibility: 'visible',
+            scale: 0,
+            transformOrigin: '50% 50%'
+        })
+        .to('#computer-header', 1.5, {
             strokeDashoffset: 0
         })
+        .to('#computer-section', 0.7, {
+            scale: 1,
+            ease: Back.easeOut
+        }, '-=0.5')
         .staggerTo('.computer-line', 0.7, {
             strokeDashoffset: 0
-        }, 0.5, '-=0.5')
+        }, 0.5, '-=0.3')
     }
 
     componentDidMount() {
