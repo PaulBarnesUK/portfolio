@@ -19,26 +19,32 @@ import projects from '../data/projects'
 
 class IndexPage extends React.Component {
   animate() {
+    const timeline = new TimelineMax();
+
+    timeline.set('.fade-in', {
+      y: 50
+    })
+    .staggerTo('.fade-in', 1, {
+      opacity: 1,
+      y: 0
+    }, 0.25)
+    .to('.chevron', 0.7, {
+      opacity: 1
+    }, '+=0.5')
+  }
+
+  setupAnimation() {
     const img = document.querySelector('.portrait img');
 
-    img.addEventListener('load', () => {
-      const timeline = new TimelineMax();
-
-      timeline.set('.fade-in', {
-        y: 50
-      })
-      .staggerTo('.fade-in', 1, {
-        opacity: 1,
-        y: 0
-      }, 0.25)
-      .to('.chevron', 0.7, {
-        opacity: 1
-      }, '+=0.5')
-    })
+    if (img.complete) {
+      this.animate()
+    } else {
+      img.addEventListener('load', this.animate)
+    }
   }
 
   componentDidMount() {
-    this.animate()
+    this.setupAnimation()
   }
 
   render() {
