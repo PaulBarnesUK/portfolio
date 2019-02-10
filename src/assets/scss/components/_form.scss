@@ -61,6 +61,7 @@
         border: none;
         border-radius: 0;
         border-bottom: 2px solid rgba($tertiaryColor, 0.6);
+
         &:focus {
             outline: none;
         }
@@ -72,6 +73,9 @@
         }
         &:focus~.form__bar:before {
             width: 100%;
+        }
+        &:required {
+            box-shadow: none;
         }
     }
     label {
