@@ -42,7 +42,9 @@
             &__wrapper {
                 @extend .col-12;
 
-                margin-top: 2rem;
+                @include media-breakpoint-up(md) {
+                    margin-top: 2rem;
+                }
             }
         }
 
