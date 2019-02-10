@@ -1,11 +1,11 @@
 export default [
     {
-        id: 1,
+        id: 7,
         name: 'Oracle',
-        copy: `Online experience, built with Vue.js`,
+        copy: `Single Page Application, built with Vue.js for Oracle OpenWorld 2018.`,
         cta: {
             copy: `View Project`,
-            link: `/my-work/oracle/internship-experience`
+            link: `/my-work/oracle/journey-to-the-cloud`
         },
         logo: require('../assets/images/svg/oracle-logo.svg'),
         image: require('../assets/images/oracle-bg.jpg'),
@@ -21,7 +21,7 @@ export default [
     {
         id: 2,
         name: 'Sage',
-        copy: `Payroll quiz, built with Vue.js`,
+        copy: `Payroll solvers quiz, a Single Page Application built with Vue.js`,
         cta: {
             copy: `View Project`,
             link: `/my-work/sage/payroll-solvers`
@@ -35,6 +35,25 @@ export default [
             opacity: 0.3
         },
         tags: ['spa', 'vue'],
+        featured: true
+    },
+    {
+        id: 8,
+        name: 'Quest Partnership',
+        copy: `eCommerce website build. Built using WooCommerce.`,
+        cta: {
+            copy: `View Project`,
+            link: `/my-work/quest-partnership/ecommerce-website-build`
+        },
+        logo: require('../assets/images/quest-partnership-logo-white.png'),
+        image: require('../assets/images/quest-partnership-bg.jpg'),
+        tile: {
+            color: [
+                '#009de2'
+            ],
+            opacity: 0.15
+        },
+        tags: ['quest-partnership', 'ecommerce', 'php', 'woocommerce', 'wordpress'],
         featured: true
     },
     {
@@ -57,26 +76,6 @@ export default [
         tags: ['website-build', 'appliance-world', 'ecommerce']
     },
     {
-        id: 4,
-        name: 'Appliance World',
-        copy: `Price spider, built on the Laravel PHP framework`,
-        cta: {
-            copy: `View Project`,
-            link: `/my-work/appliance-world/price-spider`
-        },
-        logo: require('../assets/images/svg/appliance-world-logo.svg'),
-        image: require('../assets/images/appliance-world-bg.jpg'),
-        tile: {
-            color: [
-                '#2980B9',
-                '#EC4E3D'
-            ],
-            opacity: 0.15
-        },
-        tags: ['appliance-world', 'laravel'],
-        hide: true
-    },
-    {
         id: 5,
         name: 'Oracle',
         copy: `Animated infographics, built with JavaScript-based static site generator.`,
@@ -95,6 +94,43 @@ export default [
         tags: ['oracle']
     },
     {
+        id: 4,
+        name: 'Appliance World',
+        copy: `Price spider, built on the Laravel PHP framework`,
+        cta: {
+            copy: `View Project`,
+            link: `/my-work/appliance-world/price-spider`
+        },
+        logo: require('../assets/images/svg/appliance-world-logo.svg'),
+        image: require('../assets/images/appliance-world-bg.jpg'),
+        tile: {
+            color: [
+                '#2980B9',
+                '#EC4E3D'
+            ],
+            opacity: 0.15
+        },
+        tags: ['appliance-world', 'laravel']
+    },
+    {
+        id: 1,
+        name: 'Oracle',
+        copy: `Online experience, built with Vue.js`,
+        cta: {
+            copy: `View Project`,
+            link: `/my-work/oracle/internship-experience`
+        },
+        logo: require('../assets/images/svg/oracle-logo.svg'),
+        image: require('../assets/images/oracle-bg.jpg'),
+        tile: {
+            color: [
+                '#f80000'
+            ],
+            opacity: 0.25
+        },
+        tags: ['oracle', 'spa', 'vue']
+    },
+    {
         id: 6,
         name: 'Appliance World',
         copy: `Reporting system, built on the Laravel PHP framework`,
@@ -111,26 +147,6 @@ export default [
             ],
             opacity: 0.15
         },
-        tags: ['laravel', 'appliance-world'],
-        hide: true
-    },
-    {
-        id: 7,
-        name: 'Quest Partnership',
-        copy: `eCommerce website build. Built using WooCommerce.`,
-        cta: {
-            copy: `View Project`,
-            link: `/my-work/quest-partnership/ecommerce-website-build`
-        },
-        logo: require('../assets/images/quest-partnership-logo-white.png'),
-        image: require('../assets/images/quest-partnership-bg.jpg'),
-        tile: {
-            color: [
-                '#009de2'
-            ],
-            opacity: 0.15
-        },
-        tags: ['quest-partnership', 'ecommerce', 'php', 'woocommerce', 'wordpress'],
-        featured: true
+        tags: ['laravel', 'appliance-world']
     }
 ]

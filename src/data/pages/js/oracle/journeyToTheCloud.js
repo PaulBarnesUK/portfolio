@@ -1,9 +1,9 @@
 import { bootstrap, css, html, javascript, sass, vue } from '../../../svgData/technologies'
-import showcase from '../../../../assets/images/oracle-internship-experience-showcase.png'
+import showcase from '../../../../assets/images/journey-to-the-cloud.png'
 import logo from '../../../../assets/images/svg/oracle-logo-red.svg'
 
 export default {
-    projectId: 1,
+    projectId: 7,
     client: {
         logo: {
             image: logo,

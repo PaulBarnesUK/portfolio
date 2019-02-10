@@ -40,7 +40,7 @@ class Header extends React.Component {
           <div className="container">
             <div className="row">
               <div className="header__logo">
-                <Link to="/">
+                <Link to="/" onClick={() => this.state.menuOpen = false}>
                   <Logo />
                 </Link>
               </div>
@@ -75,12 +75,12 @@ class Header extends React.Component {
         <div className={mobileNavClasses}>
           <div className="nav__links">
             <div className="nav__link">
-              <Link to="/my-work">
+              <Link to="/my-work" onClick={() => this.state.menuOpen = false}>
                 My work.
               </Link>
             </div>
             <div className="nav__link nav__link--bordered">
-              <Link to="/">
+              <Link to="/get-in-touch" onClick={() => this.state.menuOpen = false}>
                 Get in touch.
               </Link>
             </div>

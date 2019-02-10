@@ -1,9 +1,9 @@
-import { bootstrap, wordpress, javascript, sass, php } from '../../../svgData/technologies'
+import { bootstrap, wordpress, javascript, sass, php, jquery } from '../../../svgData/technologies'
 import showcase from '../../../../assets/images/quest-partnership-showcase.png'
 import logo from '../../../../assets/images/quest-partnership-logo.jpg'
 
 export default {
-    projectId: 7,
+    projectId: 8,
     client: {
         logo: {
             image: logo,
@@ -19,17 +19,16 @@ export default {
         copy: `Built with WooCommerce, on top of Wordpress.`,
         cta: {
             href: `https://questpartnership.co.uk/`,
-            copy: `View Website`
+            copy: `View Online`
         }
     },
     content: {
         copy: [
-            `A very successful campaign for Oracle, the Internship Experience was designed as an introduction to the company
-            for Oracle's 2018 group of interns, and was sent out as part of each individual's starter pack. The feedback was resoundingly positive,
-            so much so that they are planning on extending the experience to future internship programmes.`,
-            `Each page was designed to be an engaging experience, with parallax backgrounds and dynamic animations breaking the mould of a standard web page.`,
-            `This was built with the Vue.js Single Page Application JavaScript framework, with Vuex for state management, and utilised a basic Sass skeleton,
-            based on Bootstrap's grid library.`
+            `This build was outsourced to me by Evaporate, Swindon who provided me with a design and
+            preferred tech stack.`,
+            `Aside from being a typical eCommerce build, the website was built as a series
+            of modules, enabling the client to build their own custom pages from scratch, using the
+            pre-built modules.`
         ]
     },
     technologies: [
@@ -44,6 +43,10 @@ export default {
         {
             name: `JavaScript`,
             image: javascript 
+        },
+        {
+            name: 'jquery',
+            image: jquery
         },
         {
             name: `Bootstrap`,

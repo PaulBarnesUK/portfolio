@@ -24,13 +24,10 @@ export default {
     },
     content: {
         copy: [
-            `One of my first major projects at Appliance World was to perform a 
-            total overhaul on the clunky, old, static website and replace it with a light, new, 
-            responsive layout whilst maintaining branding and a simple user experience.`,
-            `Appliance World's organic traffic rose by over 30% during a 6-month period due to 
-            these changes. This was not only down to Google's preferred responsive layout, but also 
-            due to a significant improvement in page load times thanks to the use of lightweight
-            libraries and increased efficiency within the code.`
+            `Built with Vue.js, with VueX for state management. The payroll solvers quiz was built as part
+            of a marketing campaign for Sage and was designed to help payroll professionals discover their
+            payroll needs, and how Sage could help them. Data capture was implemented and acted as a gating
+            mechanism for the user's quiz results.`
         ]
     },
     technologies: [

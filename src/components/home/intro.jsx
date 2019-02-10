@@ -20,6 +20,11 @@ class HomeIntro extends React.Component {
                                 with Flux-based state management. Backend is PHP, with my
                                 framework of choice being Laravel.
                             </p>
+                            <p>
+                                Most of my recent work has been frontend-focused, creative
+                                projects but I mostly enjoy building software that solves real
+                                business problems, where there is typically more focus on the backend.
+                            </p>
                         </div>
                         <h2 className="section__title">
                             {this.props.myStackTitle}
