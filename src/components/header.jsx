@@ -52,11 +52,11 @@ class Header extends React.Component {
                         My work.
                       </Link>
                     </div>
-                    <div className="nav__link nav__link--bordered">
+                    {/* <div className="nav__link nav__link--bordered">
                       <Link to="/get-in-touch">
                         Get in touch.
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="menu">
@@ -79,11 +79,11 @@ class Header extends React.Component {
                 My work.
               </Link>
             </div>
-            <div className="nav__link nav__link--bordered">
+            {/* <div className="nav__link nav__link--bordered">
               <Link to="/get-in-touch" onClick={() => this.state.menuOpen = false}>
                 Get in touch.
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
