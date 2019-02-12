@@ -1,6 +1,6 @@
 import React from 'react'
 import stacksData from '../data/stack.js'
-import { TimelineMax, Back } from 'gsap'
+import { TimelineMax, Back, Linear } from 'gsap'
 
 class Stack extends React.Component {
     animateBackendIcon() {
@@ -44,9 +44,23 @@ class Stack extends React.Component {
         }, 0.5, '-=0.3')
     }
 
+    animateToolingIcon() {
+        const timeline = new TimelineMax()
+
+        timeline.set('#tooling #cog', {
+            transformOrigin: '50% 50%'
+        })
+        .to('#tooling #cog', 5, {
+            rotation: 360,
+            repeat: -1,
+            ease: Linear.easeNone,
+        })
+    }
+
     componentDidMount() {
         this.animateBackendIcon()
         this.animateFrontendIcon()
+        this.animateToolingIcon()
     }
 
     stacks() {
