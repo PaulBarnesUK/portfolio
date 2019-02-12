@@ -1,7 +1,9 @@
 html {
     color: $primaryFontColor;
     font-size: $fontSize;
-    font-family: 'roboto';
+    font-family: 'roboto', Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .fade-in {
