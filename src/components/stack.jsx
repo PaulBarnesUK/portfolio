@@ -45,14 +45,15 @@ class Stack extends React.Component {
     }
 
     animateToolingIcon() {
-        const timeline = new TimelineMax()
+        const timeline = new TimelineMax({
+            repeat: -1
+        })
 
         timeline.set('#tooling #cog', {
             transformOrigin: '50% 50%'
         })
         .to('#tooling #cog', 5, {
             rotation: 360,
-            repeat: -1,
             ease: Linear.easeNone,
         })
     }
