@@ -1,5 +1,24 @@
 export default [
     {
+        id: 9,
+        name: 'Sopra Steria',
+        copy: `Campaign landing page built with static site generator Gridsome`,
+        cta: {
+            copy: `View Project`,
+            link: `/my-work/sopra-steria/change-realists`
+        },
+        logo: require('../assets/images/svg/sopra-steria-logo-white.svg'),
+        image: require('../assets/images/sopra-steria-bg.jpg'),
+        tile: {
+            color: [
+                '#EF7D00'
+            ],
+            opacity: 0.25
+        },
+        tags: ['sopra-steria', 'spa', 'vue'],
+        featured: true
+    },
+    {
         id: 7,
         name: 'Oracle',
         copy: `Single Page Application, built with Vue.js for Oracle OpenWorld 2018.`,
