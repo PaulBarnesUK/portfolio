@@ -18,7 +18,7 @@ export default {
         title: `Sopra Steria: Change Realists`,
         copy: `Dynamic landing page, built with static site generator Gridsome (Powered by Vue.js)`,
         cta: {
-            href: `https://changerealists.com`,
+            href: `https://develop.d21h2bscaxbm2l.amplifyapp.com`,
             copy: `View Online`
         }
     },
