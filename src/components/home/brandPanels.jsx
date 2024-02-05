@@ -34,7 +34,7 @@ class BrandPanels extends React.Component {
                     <Link to={brand.cta.link}>
                         <div className="brand__wrapper" style={tileStyle}>
                             <div className="brand__background" style={{
-                                backgroundImage: `url(${brand.image})`,
+                                backgroundImage: `url(${brand.image.default})`,
                                 opacity: brand.tile.opacity
                             }}></div>
                             <div className="brand__content">

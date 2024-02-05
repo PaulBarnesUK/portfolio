@@ -27,9 +27,10 @@ export default [
             link: `/my-work/glanbia/optimum-nutrition`
         },
         logo: require('../assets/images/svg/on-logo-white.svg'),
+        image: require('../assets/images/on-bg.webp'),
         tile: {
             color: [ '#000' ],
-            opacity: 0.15
+            opacity: 0.25
         },
         tags: ['javascript', 'vue', 'ecommerce', 'glanbia'],
         featured: true
@@ -62,9 +63,10 @@ export default [
             link: `/my-work/glanbia/body-and-fit`
         },
         logo: require('../assets/images/svg/baf-logo-white.svg'),
+        image: require('../assets/images/baf-bg.webp'),
         tile: {
             color: [ '#000' ],
-            opacity: 0.15
+            opacity: 0.25
         },
         tags: ['javascript', 'vue', 'ecommerce', 'glanbia']
     },
