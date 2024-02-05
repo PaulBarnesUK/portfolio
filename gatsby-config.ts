@@ -28,6 +28,12 @@ const config: GatsbyConfig = {
         // Setting this parameter is also optional
         respectDNT: true,
       },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "paul-barnes.me.uk",
+      },
     }
   ]
 };
