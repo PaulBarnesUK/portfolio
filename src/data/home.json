@@ -1,0 +1,19 @@
+{
+    "heroSection": {
+        "title": "Hi, I'm Paul.",
+        "copy": "I'm a full-stack web developer living in London, England."
+    },
+    "introSection": {
+        "title": "Lorem ipsum dolor sit amet",
+        "copy": "I have 8 years experience in web development, ranging from in-house work for an eCommerce business to work with digital and creative agencies.",
+        "myStack": {
+            "title": "My Stack"
+        }
+    },
+    "recentWorkSection": {
+        "title": "My recent work"
+    },
+    "clientsSection": {
+        "title": "I'm proud to have worked with"
+    }
+}
