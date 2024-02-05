@@ -136,6 +136,12 @@
             &:last-child {
                 margin-bottom: 0;
             }
+
+            & > a {
+                display: inline-block;
+                max-width: 100%;
+                width: 400px;
+            }
         }
     }
 
