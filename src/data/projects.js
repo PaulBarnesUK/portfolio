@@ -2,7 +2,7 @@ export default [
     {
         id: 7,
         name: 'Oracle',
-        copy: `Single Page Application, built with Vue.js for Oracle OpenWorld 2018.`,
+        copy: `Single Page Application, built with Vue.js for Oracle OpenWorld.`,
         cta: {
             copy: `View Project`,
             link: `/my-work/oracle/journey-to-the-cloud`
@@ -30,7 +30,7 @@ export default [
         image: require('../assets/images/on-bg.webp'),
         tile: {
             color: [ '#000' ],
-            opacity: 0.25
+            opacity: 0.15
         },
         tags: ['javascript', 'vue', 'ecommerce', 'glanbia'],
         featured: true
@@ -66,7 +66,7 @@ export default [
         image: require('../assets/images/baf-bg.webp'),
         tile: {
             color: [ '#000' ],
-            opacity: 0.25
+            opacity: 0.15
         },
         tags: ['javascript', 'vue', 'ecommerce', 'glanbia']
     },

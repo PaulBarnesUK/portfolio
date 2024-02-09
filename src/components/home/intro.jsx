@@ -11,19 +11,15 @@ class HomeIntro extends React.Component {
                         </h2>
                         <div className="section__copy">
                             <p>
-                                I have 8 years experience in web development,
-                                ranging from in-house work for an eCommerce business
-                                to working with digital and creative agencies.
+                                I have 8 years experience in web development, working in-house as well as with digital and creative agencies.
                             </p>
                             <p>
-                                My preferred stack is typically Vue or React on the frontend
-                                with Flux-based state management. Backend is Node.js on serverless AWS infrastructure or PHP, where my
+                                While I would consider myself primarily a frontend developer,
+                                I really enjoy working across the entire stack to build software that solves real problems.
+                            </p>
+                            <p>
+                                My preferred stack is typically Vue or React on the frontend and on the backend I use Node.js on serverless AWS infrastructure or PHP, where my
                                 framework of choice would be Laravel.
-                            </p>
-                            <p>
-                                Most of my recent work has been frontend-focused
-                                projects but I mostly enjoy building software that solves real
-                                business problems, where there is typically more focus on the backend.
                             </p>
                         </div>
                         <h2 className="section__title">
