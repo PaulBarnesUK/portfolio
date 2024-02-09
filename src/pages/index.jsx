@@ -10,6 +10,8 @@ import RecentWork from '../components/recentWork'
 import Stack from '../components/stack'
 import Clients from '../components/clients'
 import Portrait from '../components/portrait'
+// import Testimonials from '../components/testimonials'
+// import Cta from '../components/cta'
 
 // Assets
 import chevron from '../assets/images/svg/chevron.svg'
