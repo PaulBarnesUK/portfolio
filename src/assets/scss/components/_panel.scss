@@ -9,7 +9,11 @@
 
         svg {
             fill: $primaryColor;
-            width: 80%;
+            width: 70%;
+
+            @include media-breakpoint-up(sm) {
+                width: 60%
+            }
         }
 
         &--small {
@@ -48,11 +52,20 @@
     }
 
     &__list {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     &__listItem {
-        margin-bottom: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.75rem;
+
+        &-sub {
+            font-size: 0.9rem;
+            color: #6c757d;  // Bootstrap's secondary text color
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
     }
 
     &__subTitle {
@@ -66,7 +79,7 @@
         font-size: 2rem;
     }
 
-    &__wrapper {
+    &__content {
         background-color: $secondaryColor;
         border: 1px solid #cdcdcd;
         border-radius: 10px;
@@ -74,7 +87,7 @@
         height: 100%;
         margin: 0 auto;
         max-width: 400px;
-        padding: 2rem 6rem;
+        padding: 2rem 4rem;
 
         &--noMaxWidth {
             max-width: none;

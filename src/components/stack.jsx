@@ -66,41 +66,28 @@ class Stack extends React.Component {
 
     stacks() {
         return stacksData.map((stack, index) => {
-            const languages = stack.languages.list.map((language, index) => {
+            const technologies = stack.technologies.map((technology, index) => {
                 return (
                     <div className="panel__listItem" key={index}>
-                        {language}
-                    </div>
-                )
-            })
-
-            const frameworks = stack.frameworks.list.map((framework, index) => {
-                return (
-                    <div className="panel__listItem" key={index}>
-                        {framework}
+                        {technology.main}
+                        {technology.sub && (
+                            <div className="panel__listItem-sub">
+                                {technology.sub}
+                            </div>
+                        )}
                     </div>
                 )
             })
 
             return (
                 <div className="panel" key={index}>
-                    <div className="panel__wrapper">
-                        <div className="panel__icon" dangerouslySetInnerHTML={stack.icon}>
-                        </div>
+                    <div className="panel__content">
+                        <div className="panel__icon" dangerouslySetInnerHTML={stack.icon} />
                         <h3 className="panel__title">
                             {stack.title}
                         </h3>
-                        <h4 className="panel__subTitle">
-                            {stack.languages.title}
-                        </h4>
                         <div className="panel__list">
-                            {languages}
-                        </div>
-                        <h4 className="panel__subTitle">
-                            {stack.frameworks.title}
-                        </h4>
-                        <div className="panel__list">
-                            {frameworks}
+                            {technologies}
                         </div>
                     </div>
                 </div>

@@ -6,63 +6,75 @@ export default [
     {
         title: "Frontend",
         icon: computerSvg,
-        languages: {
-            title: "Languages:",
-            list: [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Typescript"
-            ]
-        },
-        frameworks: {
-            title: "Frameworks:",
-            list: [
-                "Vue",
-                "React",
-                "Next.js"
-            ]
-        }
+        technologies: [
+            {
+                main: "JavaScript (ES6+)",
+            },
+            {
+                main: "TypeScript",
+            },
+            {
+                main: "React"
+            },
+            {
+                main: "Vue.js"
+            },
+            {
+                main: "Next.js"
+            },
+            {
+                main: "State Management",
+                sub: "Redux, Vuex"
+            },
+            {
+                main: "Testing",
+                sub: "Jest, Vue Test Utils"
+            }
+        ],
     },
     {
         title: "Backend",
         icon: webSvg,
-        languages: {
-            title: "Languages:",
-            list: [
-                "PHP",
-                "Node.js",
-                "SQL"
-            ]
-        },
-        frameworks: {
-            title: "Frameworks:",
-            list: [
-                "Laravel",
-                "Express",
-                "AWS"
-            ]
-        }
+        technologies: [
+            {
+                main: "Node.js",
+                sub: "Express.js"
+            },
+            {
+                main: "AWS",
+                sub: "Lambda, EC2, DynamoDB, S3"
+            },
+            {
+                main: "Databases",
+                sub: "SQL, NoSQL"
+            },
+            {
+                main: "RESTful APIs",
+            }
+        ],
     },
     {
         title: "Tooling",
         icon: settingsSvg,
-        languages: {
-            title: "My setup:",
-            list: [
-                "Webpack",
-                "Gulp",
-                "Babel",
-                "Sass",
-                "NPM",
-                "Composer",
-                "Git",
-                "VS Code"
-            ]
-        },
-        frameworks: {
-            title: "",
-            list: []
-        }
-    }
-]
+        technologies: [
+            {
+                main: "Git",
+            },
+            {
+                main: "CI/CD",
+                sub: "Jenkins, GitHub Actions"
+            },
+            {
+                main: "Build Tools",
+                sub: "Webpack, Grunt"
+            },
+            {
+                main: "Package Managers",
+                sub: "NPM, Yarn"
+            },
+            {
+                main: "VS Code",
+            }
+        ],
+    },
+];

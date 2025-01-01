@@ -1627,6 +1627,7 @@ type JSFrontmatterNode = {
   readonly blksize: Maybe<Scalars['Int']>;
   readonly blocks: Maybe<Scalars['Int']>;
   readonly changeTime: Maybe<Scalars['Date']>;
+  readonly children: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly ctime: Maybe<Scalars['Date']>;
   readonly ctimeMs: Maybe<Scalars['Float']>;
   readonly dev: Maybe<Scalars['Int']>;
@@ -1728,6 +1729,7 @@ type JSFrontmatterNodeFieldSelector = {
   readonly blksize: InputMaybe<FieldSelectorEnum>;
   readonly blocks: InputMaybe<FieldSelectorEnum>;
   readonly changeTime: InputMaybe<FieldSelectorEnum>;
+  readonly children: InputMaybe<FieldSelectorEnum>;
   readonly ctime: InputMaybe<FieldSelectorEnum>;
   readonly ctimeMs: InputMaybe<FieldSelectorEnum>;
   readonly dev: InputMaybe<FieldSelectorEnum>;
@@ -1765,6 +1767,7 @@ type JSFrontmatterNodeFilterInput = {
   readonly blksize: InputMaybe<IntQueryOperatorInput>;
   readonly blocks: InputMaybe<IntQueryOperatorInput>;
   readonly changeTime: InputMaybe<DateQueryOperatorInput>;
+  readonly children: InputMaybe<StringQueryOperatorInput>;
   readonly ctime: InputMaybe<DateQueryOperatorInput>;
   readonly ctimeMs: InputMaybe<FloatQueryOperatorInput>;
   readonly dev: InputMaybe<IntQueryOperatorInput>;
@@ -1842,6 +1845,7 @@ type JSFrontmatterNodeSortInput = {
   readonly blksize: InputMaybe<SortOrderEnum>;
   readonly blocks: InputMaybe<SortOrderEnum>;
   readonly changeTime: InputMaybe<SortOrderEnum>;
+  readonly children: InputMaybe<SortOrderEnum>;
   readonly ctime: InputMaybe<SortOrderEnum>;
   readonly ctimeMs: InputMaybe<SortOrderEnum>;
   readonly dev: InputMaybe<SortOrderEnum>;
