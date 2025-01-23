@@ -12,7 +12,7 @@ class Technologies extends React.Component {
             <div className="section section--withFloatedPanel">
                 <div className="container container--relative">
                     <div className="panel panel--floating panel--fullWidth panel--overlapping">
-                        <div className="panel__wrapper panel__wrapper--noMaxWidth">
+                        <div className="panel__content panel__content--noMaxWidth">
                             <div className="panel__title">
                                 Technologies Used
                             </div>

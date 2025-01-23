@@ -104,7 +104,7 @@
     }
 
     &--overlapping {
-        .panel__wrapper {
+        .panel__content {
             transform: translateY(-50%);
 
             @include media-breakpoint-down(md) {
