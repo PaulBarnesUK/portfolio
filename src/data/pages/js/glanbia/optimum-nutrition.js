@@ -52,5 +52,5 @@ export default {
             image: sass
         }
     ],
-    tags: ['glanbia']
+    tags: ['glanbia', 'javascript']
 }

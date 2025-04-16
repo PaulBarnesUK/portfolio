@@ -1,11 +1,11 @@
 {
     "heroSection": {
         "title": "Hi, I'm Paul.",
-        "copy": "Full-stack developer crafting end-to-end web solutions with Vue.js, React, and AWS, specialising in scalable applications and AI/ML integration."
+        "copy": "I build things."
     },
     "introSection": {
         "title": "Lorem ipsum dolor sit amet",
-        "copy": "I have 8 years experience in web development, working in-house as well as with digital and creative agencies.",
+        "copy": "I have over 9 years experience in web development, working in-house as well as with digital and creative agencies.",
         "myStack": {
             "title": "My Stack"
         }

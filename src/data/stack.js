@@ -8,7 +8,7 @@ export default [
         icon: computerSvg,
         technologies: [
             {
-                main: "JavaScript (ES6+)",
+                main: "JavaScript",
             },
             {
                 main: "TypeScript",
@@ -17,18 +17,10 @@ export default [
                 main: "React"
             },
             {
-                main: "Vue.js"
+                main: "Vue"
             },
             {
                 main: "Next.js"
-            },
-            {
-                main: "State Management",
-                sub: "Redux, Vuex"
-            },
-            {
-                main: "Testing",
-                sub: "Jest, Vue Test Utils"
             }
         ],
     },
@@ -38,42 +30,39 @@ export default [
         technologies: [
             {
                 main: "Node.js",
-                sub: "Express.js"
             },
             {
-                main: "AWS",
-                sub: "Lambda, EC2, DynamoDB, S3"
+                main: "Python",
             },
             {
-                main: "Databases",
-                sub: "SQL, NoSQL"
+                main: "PHP",
             },
             {
-                main: "RESTful APIs",
+                main: "Express"
+            },
+            {
+                main: "Laravel"
             }
         ],
     },
     {
-        title: "Tooling",
+        title: "Tools & Infra",
         icon: settingsSvg,
         technologies: [
             {
                 main: "Git",
             },
             {
-                main: "CI/CD",
-                sub: "Jenkins, GitHub Actions"
+                main: "CI/CD"
             },
             {
-                main: "Build Tools",
-                sub: "Webpack, Grunt"
+                main: "AWS"
             },
             {
-                main: "Package Managers",
-                sub: "NPM, Yarn"
+                main: "Cloudflare"
             },
             {
-                main: "VS Code",
+                main: "Serverless"
             }
         ],
     },
