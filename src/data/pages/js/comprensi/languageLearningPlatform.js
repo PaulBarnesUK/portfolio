@@ -13,7 +13,7 @@ export default {
     intro: {
         image: {
             src: showcase,
-            alt: ``,
+            alt: `Comprensi Language Learning Platform Showcase`,
         },
         title: `AI Language Learning Platform`,
         copy: `A solo startup endeavour, Comprensi is a language learning platform that utilises proprietary ML models to perform language difficulty prediction. Built with Next.js on serverless AWS infrastructure.`,
