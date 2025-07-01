@@ -12,25 +12,19 @@ class HomeIntro extends React.Component {
                     </h2>
                     <div className="section__copy section__copy--alignLeft">
                         <p>
-                            I've been building things for the web since somewhere around 2013. I wrote a few macros to give me an edge in Word of Warcraft and thought I could try to do this coding thing professionally. Shortly after that I broke production for the first at the small family-run eCommerce retailer where I was, <i>supposed</i> to be, working as an accountant. Great times.
+                            I&apos;ve been building for the web since around 2013, when I wrote some macros for World of Warcraft and realised I might actually enjoy this coding thing. Not long after, I broke production at a small family-run eCommerce company where I was meant to be working as an accountant. Good times.
                         </p>
                         <p>
-                            Since then, I have learned to not break production. Mostly. For some reason they actually let me carry on doing the development stuff, allowing me to build out whatever crazy ideas came into my head to save costs and increase revenue. Some of it actually worked.
+                            Somehow they let me carry on, and I ended up building tools and systems that saved money and drove revenue. Some of them even worked. I fully moved out of finance in 2017 and into proper development roles, where I picked up a sense for clean UX, solid architecture, and code that could be trusted and scaled.
                         </p>
                         <p>
-                            I fully transitioned out of finance work (boring af ngl) and into professional development in 2017. I've since worked alongside brilliant designers, developing an intuition for good UX and elegant design, as well as some incredible engineers, who taught me an appreciation for well architected, well tested, readable code. Code that could be trusted. Code that scaled.
+                            I&apos;ve had roles with different levels of freedom, and I&apos;ve learned a lot from all of them. But what I really love is solving real problems. Getting obsessed with a challenge and building something that works.
                         </p>
                         <p>
-                            Those roles provided varying degrees of autonomy. I loved them all, and I learned so much from them all. But my true passion lies in using my creativity. In having a <i>real</i> problem to solve and unleashing the obsessive in me to come up with the solution and build it. That's where it's at.
+                            I went all in recently and built my own <Link className="link" to="/my-work/comprensi/language-learning-platform">solo startup</Link>. It felt ideal at first. But honestly, it&apos;s lonely. I realised a big part of what I enjoy is the collaboration. Building with others, sharing the highs and lows.
                         </p>
                         <p>
-                            I went all in on that recently and built my own <Link className="link" to="/my-work/comprensi/language-learning-platform">solo startup</Link>. Basically Nirvana for me, I thought. But they don't tell you how lonely that shit is. I realised that a big part of what I love about building is collaborating. Working towards a mutual goal, sharing the journey. I miss that.
-                        </p>
-                        <p>
-                            So that's what I'm looking for now; early stage startups with smart people building with a purpose. If that sounds like your company, hit me up.
-                        </p>
-                        <p>
-                            PS: If you've read this far, you probably have too much time on your hands. But you might be pleased to know that you've not just read some AI-generated drivel; another human actually wrote this. Because fuck that shit. A portfolio should be personal, not that shallow middle-of-the-road waffle you get out of LLMs.
+                            So that&apos;s what I&apos;m looking for now — early stage teams with smart people and a sense of purpose. If that&apos;s you, let&apos;s chat.
                         </p>
                     </div>
                         <h2 className="section__title">

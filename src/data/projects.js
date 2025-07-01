@@ -1,21 +1,5 @@
 export default [
     {
-        id: 12,
-        name: 'Comprensi',
-        copy: `Language learning platform, solo startup endeavour.`,
-        cta: {
-            copy: `View Project`,
-            link: `/my-work/comprensi/language-learning-platform`
-        },
-        logo: require('../assets/images/svg/comprensi-logo-white.svg'),
-        image: require('../assets/images/comprensi-bg.jpg'),
-        tile: {
-            color: [ '#9b59b6' ],
-            opacity: 0.15
-        },
-        tags: ['javascript', 'ai', 'ml', 'python']
-    },
-    {
         id: 7,
         name: 'Oracle',
         copy: `Single Page Application, built with Vue.js for Oracle OpenWorld.`,
@@ -85,6 +69,22 @@ export default [
             opacity: 0.15
         },
         tags: ['javascript', 'vue', 'ecommerce', 'glanbia']
+    },
+    {
+        id: 12,
+        name: 'Comprensi',
+        copy: `Language learning platform, solo startup endeavour.`,
+        cta: {
+            copy: `View Project`,
+            link: `/my-work/comprensi/language-learning-platform`
+        },
+        logo: require('../assets/images/svg/comprensi-logo-white.svg'),
+        image: require('../assets/images/comprensi-bg.jpg'),
+        tile: {
+            color: [ '#9b59b6' ],
+            opacity: 0.15
+        },
+        tags: ['javascript', 'ai', 'ml', 'python']
     },
     {
         id: 8,

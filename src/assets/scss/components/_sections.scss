@@ -13,7 +13,7 @@
     }
 
     &__copy {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-bottom: 4.5rem;
 
         &--alignLeft {
@@ -58,9 +58,6 @@
     }
 
     @include media-breakpoint-up(md) {
-        &__copy {
-            font-size: 1.375rem;
-        }
 
         &__title {
             font-size: 3rem;
