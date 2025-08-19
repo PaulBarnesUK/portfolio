@@ -1,38 +1,30 @@
-import React from 'react'
-import { Link } from 'gatsby-link'
-import classNames from 'classnames'
-import Logo from './logo'
+import React from "react";
+import { Link } from "gatsby-link";
+import classNames from "classnames";
+import Logo from "./logo";
 
 class Header extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
-      menuOpen: false
-    }
+      menuOpen: false,
+    };
   }
 
   toggleMenu() {
     this.setState({
-      menuOpen: !this.state.menuOpen
-    })
+      menuOpen: !this.state.menuOpen,
+    });
   }
 
   render() {
-    const menuClasses = classNames(
-      'hamburger',
-      'hamburger--spin',
-      {
-        'is-active': this.state.menuOpen
-      }
-    )
+    const menuClasses = classNames("hamburger", "hamburger--spin", {
+      "is-active": this.state.menuOpen,
+    });
 
-    const mobileNavClasses = classNames(
-      'nav',
-      'nav__mobile',
-      {
-        'nav__mobile--open': this.state.menuOpen
-      }
-    )
+    const mobileNavClasses = classNames("nav", "nav__mobile", {
+      "nav__mobile--open": this.state.menuOpen,
+    });
 
     return (
       <div>
@@ -40,7 +32,7 @@ class Header extends React.Component {
           <div className="container">
             <div className="row">
               <div className="header__logo">
-                <Link to="/" onClick={() => this.state.menuOpen = false}>
+                <Link to="/" onClick={() => (this.state.menuOpen = false)}>
                   <Logo />
                 </Link>
               </div>
@@ -48,9 +40,10 @@ class Header extends React.Component {
                 <div className="nav nav--desktop">
                   <div className="nav__links">
                     <div className="nav__link">
-                      <Link to="/my-work">
-                        My work.
-                      </Link>
+                      <Link to="/blog">Blog.</Link>
+                    </div>
+                    <div className="nav__link">
+                      <Link to="/my-work">My work.</Link>
                     </div>
                     {/* <div className="nav__link nav__link--bordered">
                       <Link to="/get-in-touch">
@@ -60,12 +53,15 @@ class Header extends React.Component {
                   </div>
                 </div>
                 <div className="menu">
-                  <div className="menu__toggle" onClick={() => this.toggleMenu()}>
-                      <div className={menuClasses}>
-                          <div className="hamburger-box">
-                              <div className="hamburger-inner"></div>
-                          </div>
+                  <div
+                    className="menu__toggle"
+                    onClick={() => this.toggleMenu()}
+                  >
+                    <div className={menuClasses}>
+                      <div className="hamburger-box">
+                        <div className="hamburger-inner"></div>
                       </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -75,8 +71,13 @@ class Header extends React.Component {
         <div className={mobileNavClasses}>
           <div className="nav__links">
             <div className="nav__link">
-              <Link to="/my-work" onClick={() => this.state.menuOpen = false}>
+              <Link to="/my-work" onClick={() => (this.state.menuOpen = false)}>
                 My work.
+              </Link>
+            </div>
+            <div className="nav__link">
+              <Link to="/blog" onClick={() => (this.state.menuOpen = false)}>
+                Blog.
               </Link>
             </div>
             {/* <div className="nav__link nav__link--bordered">
@@ -87,8 +88,8 @@ class Header extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;
