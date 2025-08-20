@@ -1,33 +1,36 @@
 // Libraries
-@import 'normalize';
+@import "normalize";
 @include normalize();
-@import 'bootstrap/bootstrap-grid.scss';
+@import "bootstrap/bootstrap-grid.scss";
 
 // Fonts
-@import 'fonts/roboto.scss';
+@import "fonts/roboto.scss";
 
 // Base styling
-@import 'variables';
-@import 'base';
-@import 'page';
+@import "variables";
+@import "base";
+@import "page";
 
 // Layout component styles
-@import 'components/header';
-@import 'components/footer';
-@import 'components/sections';
+@import "components/header";
+@import "components/footer";
+@import "components/sections";
 
 // Component styles
-@import 'components/brand';
-@import 'components/button';
-@import 'components/cta';
-@import 'components/hero';
-@import 'components/hamburgers/hamburgers';
-@import 'components/panel';
-@import 'components/testimonials';
-@import 'components/clients';
-@import 'components/logo';
-@import 'components/form';
-@import 'components/link';
+@import "components/brand";
+@import "components/button";
+@import "components/cta";
+@import "components/hero";
+@import "components/hamburgers/hamburgers";
+@import "components/panel";
+@import "components/testimonials";
+@import "components/clients";
+@import "components/logo";
+@import "components/form";
+@import "components/link";
+@import "components/blog-post";
+@import "components/blog-posts";
+@import "components/blog-post-card";
 
 // Page styles
-@import 'pages/index';
+@import "pages/index";

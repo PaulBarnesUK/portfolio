@@ -1,10 +1,10 @@
 ---
-title: "Welcome to My Blog"
+title: "Test 1"
 date: "2025-08-19"
-slug: "welcome-to-my-blog"
+slug: "claude"
 excerpt: "This is my first blog post. I'll be sharing thoughts on web development, technology, and my projects."
 tags: ["meta", "welcome"]
-image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=360&h=225&fit=crop"
+image: "https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/6826a6227b1fbd47034d1936_claude-code.webp"
 ---
 
 # Welcome to My Blog

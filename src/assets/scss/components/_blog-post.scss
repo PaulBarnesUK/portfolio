@@ -1,0 +1,150 @@
+.blog-post {
+  &__header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #6c757d;
+    flex-wrap: wrap;
+  }
+
+  &__date {
+    font-weight: 500;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    text-align: left;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $primaryFontColor;
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      border-bottom: 2px solid $primaryColor;
+      padding-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    ul,
+    ol {
+      margin-bottom: 1.5rem;
+      padding-left: 2rem;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    blockquote {
+      border-left: 4px solid $primaryColor;
+      background-color: rgba($primaryColor, 0.1);
+      margin: 2rem 0;
+      padding: 1rem 2rem;
+      font-style: italic;
+    }
+
+    code {
+      background-color: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 3px;
+      font-size: 0.9em;
+      padding: 0.2rem 0.4rem;
+    }
+
+    pre {
+      background-color: #2d3748;
+      border-radius: 5px;
+      margin: 1.5rem 0;
+      overflow-x: auto;
+      padding: 1.5rem;
+
+      code {
+        background: transparent;
+        border: none;
+        color: #f7fafc;
+        font-size: 0.9rem;
+        padding: 0;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin: 1.5rem 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+      color: $primaryColor;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: darken($primaryColor, 15%);
+      }
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    border-top: 1px solid #e9ecef;
+    padding-top: 2rem;
+  }
+}
+
+// Tags component
+.tag {
+  background-color: rgba($primaryColor, 0.1);
+  border: 1px solid rgba($primaryColor, 0.3);
+  border-radius: 15px;
+  color: $primaryColor;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $primaryColor;
+    color: $secondaryFontColor;
+  }
+}

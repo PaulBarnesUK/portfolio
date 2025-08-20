@@ -1,0 +1,14 @@
+.blog-posts {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  a {
+    color: $primaryFontColor;
+    text-decoration: none;
+  }
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}

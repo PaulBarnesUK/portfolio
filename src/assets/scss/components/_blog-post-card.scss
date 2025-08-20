@@ -1,0 +1,53 @@
+.blog-post-card {
+  display: flex;
+  position: relative;
+  text-align: left;
+
+  article {
+    width: 100%;
+  }
+
+  &__date {
+    color: rgba($primaryFontColor, 0.7);
+  }
+
+  &__image {
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 62.5%;
+    position: relative;
+    width: 100%;
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      transition: transform 0.3s;
+    }
+  }
+
+  &__tags {
+    color: rgba($primaryFontColor, 0.7);
+    margin: 0.75rem 0;
+  }
+
+  &__title {
+    margin: 0.75rem 0;
+
+    a {
+      transition: color 0.3s;
+    }
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+
+    .blog-post-card__title a {
+      color: rgba($primaryFontColor, 0.7);
+    }
+  }
+}

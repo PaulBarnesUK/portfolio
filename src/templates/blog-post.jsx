@@ -43,7 +43,7 @@ class BlogPostTemplate extends React.Component {
                 <header className="blog-post__header fade-in">
                   <h1 className="section__title">{post.frontmatter.title}</h1>
                   <div className="blog-post__meta">
-                    <time dateTime={post.frontmatter.date}>
+                    <time className="blog-post__date" dateTime={post.frontmatter.date}>
                       {new Date(post.frontmatter.date).toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'long',
