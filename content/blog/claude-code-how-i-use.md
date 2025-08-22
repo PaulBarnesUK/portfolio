@@ -8,7 +8,7 @@ image: /images/blog/hero-claude-code.webp
 alt: "Claude Code terminal"
 ---
 
-# Lessons from the frontline
+## Lessons from the frontline
 
 I’ve been building solo full-time for the past couple of years. That basically means I’ve had the freedom to spend way too much time talking to AI coding tools instead of other humans. Since GPT-4 dropped, I’ve swung back and forth between _“the machines have replaced us”_ and _“I'd have finished this faster by chiseling it into stone.”_
 
@@ -16,7 +16,7 @@ I’ve tried Cursor, Claude Code, Gemini CLI, and a handful of other tools you�
 
 I’ve boiled my lessons down to two simple rules.
 
-## #1 Work in validatable chunks
+### #1 Work in validatable chunks
 
 **Write code in chunks you can actually validate.**
 
@@ -50,7 +50,7 @@ In that context, I still use AI to ask questions about the code and to help thin
 - **Closer to production →** tighten feedback loops, shrink the chunks
 - **Mission critical code →** keep your hands on the keyboard
 
-## #2 Architect up front
+### #2 Architect up front
 
 **Plan first, then code.**
 
@@ -62,7 +62,7 @@ The payoff is guardrails. With them, you can keep the AI working inside a well-m
 
 So don’t skip the blueprint stage. Treat the AI as a brainstorming partner at the whiteboard, not a rogue contractor building a mystery house in your name.
 
-## Wrapping it up
+### Wrapping it up
 
 AI coding tools are powerful, but they’re not magic. Left unchecked, they’ll happily hand you a staircase with missing steps or a rocket aimed at your neighbor’s shed.
 
