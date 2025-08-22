@@ -12,6 +12,7 @@
   }
 
   &__image {
+    background: rgb(228, 228, 231);
     border-radius: 10px;
     overflow: hidden;
     padding-bottom: 62.5%;
@@ -37,7 +38,9 @@
     margin: 0.75rem 0;
 
     a {
-      transition: color 0.3s;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: text-decoration-color 0.3s;
     }
   }
 
@@ -47,7 +50,7 @@
     }
 
     .blog-post-card__title a {
-      color: rgba($primaryFontColor, 0.7);
+      text-decoration-color: $primaryFontColor;
     }
   }
 }

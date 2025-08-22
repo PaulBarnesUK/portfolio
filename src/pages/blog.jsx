@@ -8,7 +8,8 @@ import { Head as DefaultHead } from "../layouts/head";
 export function Head() {
   return DefaultHead({
     title: "Blog - Paul Barnes",
-    description: "Thoughts on web development, technology, and my projects.",
+    description:
+      "Notes from the trenches of building, breaking, and occasionally shipping software.",
   });
 }
 
@@ -59,7 +60,10 @@ class BlogPage extends React.Component {
             <div className="section__content section__content--standard">
               <h1 className="section__title fade-in">Blog</h1>
               <div className="section__copy section__copy--noMargin fade-in">
-                <p>Thoughts on web development, technology, and my projects.</p>
+                <p>
+                  Notes from the trenches of building, breaking, and
+                  occasionally shipping software.
+                </p>
               </div>
             </div>
           </section>
@@ -100,7 +104,7 @@ class BlogPage extends React.Component {
                             dateTime={node.frontmatter.date}
                           >
                             {new Date(node.frontmatter.date).toLocaleDateString(
-                              "en-US",
+                              "en-GB",
                               {
                                 year: "numeric",
                                 month: "long",

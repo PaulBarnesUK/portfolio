@@ -1,29 +1,30 @@
 .blog-post {
   &__header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 3rem;
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+    }
   }
 
   &__meta {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
     font-size: 1rem;
-    color: #6c757d;
-    flex-wrap: wrap;
+    color: rgba($primaryFontColor, 0.7);
   }
 
   &__date {
     font-weight: 500;
-  }
-
-  &__tags {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   &__content {
@@ -42,6 +43,7 @@
       font-weight: bold;
       margin-top: 2rem;
       margin-bottom: 1rem;
+      line-height: 1.2;
     }
 
     h1 {
@@ -125,26 +127,10 @@
 
   &__footer {
     text-align: center;
-    border-top: 1px solid #e9ecef;
     padding-top: 2rem;
-  }
-}
 
-// Tags component
-.tag {
-  background-color: rgba($primaryColor, 0.1);
-  border: 1px solid rgba($primaryColor, 0.3);
-  border-radius: 15px;
-  color: $primaryColor;
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 500;
-  padding: 0.25rem 0.75rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: $primaryColor;
-    color: $secondaryFontColor;
+    a {
+      text-decoration: none;
+    }
   }
 }

@@ -2067,6 +2067,7 @@ type MarkdownRemarkFilterListInput = {
 };
 
 type MarkdownRemarkFrontmatter = {
+  readonly alt: Maybe<Scalars['String']>;
   readonly date: Maybe<Scalars['Date']>;
   readonly excerpt: Maybe<Scalars['String']>;
   readonly image: Maybe<Scalars['String']>;
@@ -2084,6 +2085,7 @@ type MarkdownRemarkFrontmatter_dateArgs = {
 };
 
 type MarkdownRemarkFrontmatterFieldSelector = {
+  readonly alt: InputMaybe<FieldSelectorEnum>;
   readonly date: InputMaybe<FieldSelectorEnum>;
   readonly excerpt: InputMaybe<FieldSelectorEnum>;
   readonly image: InputMaybe<FieldSelectorEnum>;
@@ -2093,6 +2095,7 @@ type MarkdownRemarkFrontmatterFieldSelector = {
 };
 
 type MarkdownRemarkFrontmatterFilterInput = {
+  readonly alt: InputMaybe<StringQueryOperatorInput>;
   readonly date: InputMaybe<DateQueryOperatorInput>;
   readonly excerpt: InputMaybe<StringQueryOperatorInput>;
   readonly image: InputMaybe<StringQueryOperatorInput>;
@@ -2102,6 +2105,7 @@ type MarkdownRemarkFrontmatterFilterInput = {
 };
 
 type MarkdownRemarkFrontmatterSortInput = {
+  readonly alt: InputMaybe<SortOrderEnum>;
   readonly date: InputMaybe<SortOrderEnum>;
   readonly excerpt: InputMaybe<SortOrderEnum>;
   readonly image: InputMaybe<SortOrderEnum>;
@@ -3384,7 +3388,7 @@ type BlogPostQueryQueryVariables = Exact<{
 }>;
 
 
-type BlogPostQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly excerpt: string | null, readonly frontmatter: { readonly title: string | null, readonly date: string | null, readonly slug: string | null, readonly excerpt: string | null, readonly tags: ReadonlyArray<string | null> | null } | null } | null };
+type BlogPostQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly excerpt: string | null, readonly frontmatter: { readonly title: string | null, readonly date: string | null, readonly slug: string | null, readonly excerpt: string | null, readonly tags: ReadonlyArray<string | null> | null, readonly image: string | null } | null } | null };
 
 type BlogQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
