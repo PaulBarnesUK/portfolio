@@ -16,9 +16,7 @@ I’ve tried Cursor, Claude Code, Gemini CLI, and a handful of other tools you�
 
 I’ve boiled my lessons down to two simple rules.
 
-### #1 Work in validatable chunks
-
-**Write code in chunks you can actually validate.**
+### #1 Work in chunks you can actually validate.
 
 When I'm writing code by hand, I work in tight feedback loops: write a small chunk of code, run it, check it works. Over and over, chunk by chunk, until the solution takes shape. That rhythm builds both deep understanding and confidence in the solution's robustness.
 
@@ -50,9 +48,7 @@ In that context, I still use AI to ask questions about the code and to help thin
 - **Closer to production →** tighten feedback loops, shrink the chunks
 - **Mission critical code →** keep your hands on the keyboard
 
-### #2 Architect up front
-
-**Plan first, then code.**
+### #2 Plan first, then code. You both need the context.
 
 Validating chunks keeps you on track, but only if you know the destination. That’s why planning matters.
 
