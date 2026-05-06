@@ -32,7 +32,7 @@ class BlogPage extends React.Component {
           opacity: 1,
           y: 0,
         },
-        "-=0.75"
+        "-=0.75",
       )
       .staggerTo(
         ".blog-post-card.fade-in",
@@ -42,7 +42,7 @@ class BlogPage extends React.Component {
           y: 0,
         },
         0.15,
-        "-=0.75"
+        "-=0.75",
       );
   }
 
@@ -90,15 +90,15 @@ class BlogPage extends React.Component {
                         </div>
                       )}
                       <div className="blog-post-card__content">
-                        <div className="blog-post-card__tags">
-                          {node.frontmatter.tags.join(", ")}
-                        </div>
                         <h2 className="blog-post-card__title">
                           <Link to={`/blog/${node.frontmatter.slug}`}>
                             {node.frontmatter.title}
                           </Link>
                         </h2>
                         <div className="blog-post-card__meta">
+                          <div className="blog-post-card__tags">
+                            {node.frontmatter.tags.join(", ")}
+                          </div>
                           <time
                             className="blog-post-card__date"
                             dateTime={node.frontmatter.date}
@@ -109,7 +109,7 @@ class BlogPage extends React.Component {
                                 year: "numeric",
                                 month: "long",
                                 day: "numeric",
-                              }
+                              },
                             )}
                           </time>
                         </div>

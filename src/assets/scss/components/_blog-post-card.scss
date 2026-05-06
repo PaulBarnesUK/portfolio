@@ -9,6 +9,7 @@
 
   &__date {
     color: rgba($primaryFontColor, 0.7);
+    font-size: 14px;
   }
 
   &__image {
@@ -32,6 +33,7 @@
   &__tags {
     color: rgba($primaryFontColor, 0.7);
     margin: 0.75rem 0;
+    font-style: italic;
   }
 
   &__title {
