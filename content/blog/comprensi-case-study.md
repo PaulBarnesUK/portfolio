@@ -187,8 +187,8 @@ The same pattern could be reused elsewhere. Whether for another language or even
 
 The features would need to change for other languages and formats, but the core loop is portable:
 
-> collect human judgments → convert them into a scale → train a model to predict that scale → integrate the prediction into a useful product experience.
+> collect human difficulty judgments → convert them into a scale → train a model to predict that scale → integrate the prediction into a useful product experience.
 
-That is the part I hope other people build on.
+That is the part I hope other people can take inspiration from to help more learners.
 
 If you're interested in knowing more, feel free to reach out to me at paul.barnes.psnl@gmail.com
