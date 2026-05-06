@@ -3,10 +3,12 @@
 const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
-
-process.env.AWS_SDK_JS_SUPPRESS_MAINTENANCE_MODE_MESSAGE = "1";
-
-const AWS = require("aws-sdk");
+const {
+  DeleteObjectsCommand,
+  ListObjectsV2Command,
+  PutObjectCommand,
+  S3Client,
+} = require("@aws-sdk/client-s3");
 
 const bucketName = process.env.S3_BUCKET || "www.paul-barnes.me.uk";
 const bucketPrefix = normalizePrefix(process.env.S3_PREFIX || "");
@@ -18,7 +20,7 @@ if (!fs.existsSync(publicDir)) {
   process.exit(1);
 }
 
-const s3 = new AWS.S3({
+const s3 = new S3Client({
   region: process.env.AWS_REGION || process.env.AWS_DEFAULT_REGION || "us-east-1",
 });
 
@@ -88,13 +90,13 @@ async function listRemoteObjects() {
 
   do {
     const response = await withDeployStep("ListBucket", () =>
-      s3
-        .listObjectsV2({
+      s3.send(
+        new ListObjectsV2Command({
           Bucket: bucketName,
           Prefix: bucketPrefix,
           ContinuationToken,
         })
-        .promise()
+      )
     );
 
     objects.push(...(response.Contents || []));
@@ -117,7 +119,7 @@ async function uploadObject({ filePath, key }) {
     params.CacheControl = cacheControl;
   }
 
-  await withDeployStep(`PutObject ${key}`, () => s3.putObject(params).promise());
+  await withDeployStep(`PutObject ${key}`, () => s3.send(new PutObjectCommand(params)));
   console.log(`Uploaded ${key}`);
 }
 
@@ -129,15 +131,15 @@ async function deleteObjects(objects) {
     }
 
     await withDeployStep(`DeleteObjects ${index + 1}-${index + chunk.length}`, () =>
-      s3
-        .deleteObjects({
+      s3.send(
+        new DeleteObjectsCommand({
           Bucket: bucketName,
           Delete: {
             Objects: chunk,
             Quiet: true,
           },
         })
-        .promise()
+      )
     );
 
     console.log(`Removed ${chunk.length} stale files`);

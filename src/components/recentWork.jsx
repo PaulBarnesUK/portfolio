@@ -1,10 +1,10 @@
 import React from 'react'
 import BrandPanels from './home/brandPanels';
-import { TimelineMax } from 'gsap'
+import { gsap } from 'gsap'
 
 class RecentWork extends React.Component {
     animate() {
-        const timeline = new TimelineMax();
+        const timeline = gsap.timeline();
 
         timeline.set('.fade-in', {
             y: 50

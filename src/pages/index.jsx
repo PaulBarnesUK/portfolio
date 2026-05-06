@@ -1,5 +1,5 @@
 import React from 'react'
-import { TimelineMax } from 'gsap';
+import { gsap } from 'gsap';
 import { graphql  } from 'gatsby';
 
 // Components
@@ -29,7 +29,7 @@ export function Head() {
 
 class IndexPage extends React.Component {
   animate() {
-    const timeline = new TimelineMax();
+    const timeline = gsap.timeline();
 
     timeline.set('.fade-in', {
       y: 50

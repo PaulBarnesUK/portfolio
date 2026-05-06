@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import { TimelineMax } from "gsap";
+import { gsap } from "gsap";
 
 import Layout from "../layouts";
 import { Head as DefaultHead } from "../layouts/head";
@@ -16,7 +16,7 @@ export function Head({ data }) {
 
 class BlogPostTemplate extends React.Component {
   animate() {
-    const timeline = new TimelineMax();
+    const timeline = gsap.timeline();
 
     timeline
       .set(".fade-in", {

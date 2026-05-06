@@ -1,10 +1,10 @@
 import React from 'react'
 import stacksData from '../data/stack.js'
-import { TimelineMax, Back, Linear, Power1 } from 'gsap'
+import { gsap, Back, Linear, Power1 } from 'gsap'
 
 class Stack extends React.Component {
     animateBackendIcon() {
-        const animation = new TimelineMax({
+        const animation = gsap.timeline({
             repeat: -1,
             repeatDelay: 1,
             yoyo: true
@@ -21,7 +21,7 @@ class Stack extends React.Component {
     }
 
     animateFrontendIcon() {
-        const animation = new TimelineMax({
+        const animation = gsap.timeline({
             repeat: -1,
             repeatDelay: 1,
             yoyo: true
@@ -45,7 +45,7 @@ class Stack extends React.Component {
     }
 
     animateToolingIcon() {
-        const timeline = new TimelineMax({
+        const timeline = gsap.timeline({
             repeat: -1
         })
 

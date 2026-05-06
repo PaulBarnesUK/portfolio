@@ -3,11 +3,11 @@ import Layout from '../layouts'
 import Hero from '../components/hero'
 import ContactForm from '../components/contactForm'
 import Portrait from './../components/portrait'
-import { TimelineMax } from 'gsap';
+import { gsap } from 'gsap';
 
 class ContactPage extends React.Component {
     animate() {
-        const timeline = new TimelineMax();
+        const timeline = gsap.timeline();
 
         timeline.set('.fade-in', {
             y: 50

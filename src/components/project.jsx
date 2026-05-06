@@ -5,6 +5,7 @@ import Work from './recentWork'
 import projects from '../data/projects'
 import Layout from '../layouts'
 import { createRef } from 'react'
+import { gsap } from 'gsap'
 
 class Project extends React.Component {
 
@@ -62,7 +63,7 @@ class Project extends React.Component {
         img.removeEventListener('load', this.animationLoadHandler);
         img.removeEventListener('error', this.imageErrorHandler);
 
-        const timeline = new TimelineMax();
+        const timeline = gsap.timeline();
 
         timeline.set('.fade-in', {
             y: 50
