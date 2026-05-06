@@ -8,20 +8,20 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "deploy": "gatsby-plugin-s3 deploy",
+    "develop": "GATSBY_TELEMETRY_DISABLED=1 GATSBY_FEEDBACK_DISABLED=1 gatsby develop",
+    "start": "npm run develop",
+    "build": "GATSBY_TELEMETRY_DISABLED=1 GATSBY_FEEDBACK_DISABLED=1 gatsby build",
+    "deploy": "npm run build && AWS_SDK_LOAD_CONFIG=1 node scripts/deploy-s3.js",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
+    "clean": "GATSBY_TELEMETRY_DISABLED=1 GATSBY_FEEDBACK_DISABLED=1 gatsby clean",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "aws-sdk": "^2.1550.0",
     "classnames": "^2.5.1",
     "gatsby": "^5.13.2",
     "gatsby-plugin-google-analytics": "^5.13.1",
     "gatsby-plugin-react-helmet": "^6.13.1",
-    "gatsby-plugin-s3": "^0.4.1",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-remark-images": "^7.14.0",
     "gatsby-remark-prismjs": "^7.14.0",

@@ -57,12 +57,6 @@ const config: GatsbyConfig = {
         respectDNT: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-s3`,
-      options: {
-        bucketName: "www.paul-barnes.me.uk",
-      },
-    }
   ]
 };
 

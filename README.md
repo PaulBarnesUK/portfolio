@@ -1,49 +1,40 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+# Portfolio
 
-## 🚀 Quick start
+Gatsby portfolio site deployed as a static website to AWS S3.
 
-1.  **Create a Gatsby site.**
+## Development
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+```shell
+npm install
+npm run develop
+```
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+The local development server runs at `http://localhost:8000`.
 
-2.  **Start developing.**
+## Build
 
-    Navigate into your new site’s directory and start it up.
+```shell
+npm run build
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+This generates the production site in `public/`.
 
-3.  **Open the code and start customizing!**
+## Deploy
 
-    Your site is now running at http://localhost:8000!
+```shell
+npm run deploy
+```
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+The deploy script builds the site first, then syncs `public/` to the
+`www.paul-barnes.me.uk` S3 bucket.
 
-4.  **Learn more**
+The S3 sync script is configured to:
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- remove S3 objects that no longer exist in the latest build
+- omit per-object ACLs, so it works with buckets that have S3 Object Ownership / ACLs disabled
+- apply Gatsby cache-control headers for HTML, JSON, CSS, JS, and static assets
 
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+Deployment uses the normal AWS SDK credential chain, so make sure your local AWS
+profile or environment variables can write to the bucket before running it. The
+active credentials need `s3:ListBucket`, `s3:PutObject`, and `s3:DeleteObject`.
+If you use a named AWS profile, run `AWS_PROFILE=your-profile npm run deploy`.

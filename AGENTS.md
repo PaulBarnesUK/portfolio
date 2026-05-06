@@ -10,7 +10,7 @@ This is a Gatsby.js portfolio website built with:
 - **TypeScript** - Type checking (though many files use .jsx)
 - **Sass** - CSS preprocessing
 - **GSAP 2.0.1** - Animation library (TimelineMax)
-- **gatsby-plugin-s3** - AWS S3 deployment
+- **AWS SDK** - S3 deployment sync script
 
 ## Development Commands
 
@@ -79,4 +79,4 @@ Each project in `projects.js` includes:
 
 ## Deployment
 
-The site deploys to AWS S3 bucket `www.paul-barnes.me.uk` using `gatsby-plugin-s3`.
+The site deploys to AWS S3 bucket `www.paul-barnes.me.uk` using `scripts/deploy-s3.js`.
