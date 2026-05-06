@@ -64,6 +64,55 @@
       margin-bottom: 1.5rem;
     }
 
+    table {
+      border: 1px solid rgba($primaryFontColor, 0.14);
+      border-collapse: collapse;
+      border-radius: 5px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      display: block;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 2rem 0;
+      max-width: 100%;
+      overflow-x: auto;
+      width: fit-content;
+    }
+
+    thead {
+      background-color: rgba($primaryColor, 0.12);
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid rgba($primaryFontColor, 0.12);
+      padding: 0.85rem 1rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: $primaryFontColor;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    td {
+      min-width: 9rem;
+    }
+
+    tbody {
+      tr:nth-child(even) {
+        background-color: rgba($primaryFontColor, 0.035);
+      }
+
+      tr:last-child {
+        th,
+        td {
+          border-bottom: 0;
+        }
+      }
+    }
+
     ul,
     ol {
       margin-bottom: 1.5rem;
