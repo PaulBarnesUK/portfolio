@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby-link";
 import classNames from "classnames";
 import Logo from "./logo";
+import contact from "../data/contact";
 
 class Header extends React.Component {
   constructor() {
@@ -45,11 +46,11 @@ class Header extends React.Component {
                     <div className="nav__link">
                       <Link to="/my-work">My work.</Link>
                     </div>
-                    {/* <div className="nav__link nav__link--bordered">
-                      <Link to="/get-in-touch">
+                    <div className="nav__link nav__link--bordered">
+                      <a href={contact.mailto}>
                         Get in touch.
-                      </Link>
-                    </div> */}
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div className="menu">
@@ -80,11 +81,11 @@ class Header extends React.Component {
                 Blog.
               </Link>
             </div>
-            {/* <div className="nav__link nav__link--bordered">
-              <Link to="/get-in-touch" onClick={() => this.state.menuOpen = false}>
+            <div className="nav__link nav__link--bordered">
+              <a href={contact.mailto} onClick={() => this.setState({ menuOpen: false })}>
                 Get in touch.
-              </Link>
-            </div> */}
+              </a>
+            </div>
           </div>
         </div>
       </div>

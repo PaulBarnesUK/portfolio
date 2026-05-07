@@ -1,6 +1,5 @@
 import React from 'react'
 import cta from '../data/cta'
-import { Link } from 'gatsby-link'
 
 const Cta = () => (
     <div className="container">
@@ -10,9 +9,9 @@ const Cta = () => (
                     {cta.copy}
                 </div>
                 <div className="cta__button">
-                    <Link to={cta.button.link} className="cta__link">
+                    <a href={cta.button.link} className="cta__link">
                         {cta.button.copy}
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>
