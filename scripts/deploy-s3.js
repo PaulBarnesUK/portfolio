@@ -14,6 +14,7 @@ const bucketName = process.env.S3_BUCKET || "www.paul-barnes.me.uk";
 const bucketPrefix = normalizePrefix(process.env.S3_PREFIX || "");
 const publicDir = path.resolve(__dirname, "..", "public");
 const parallelLimit = Number(process.env.S3_DEPLOY_PARALLEL_LIMIT || 10);
+const ignoredFileNames = new Set([".DS_Store"]);
 
 if (!fs.existsSync(publicDir)) {
   console.error("Build output not found. Run `npm run build` before deploying.");
@@ -22,16 +23,20 @@ if (!fs.existsSync(publicDir)) {
 
 const s3 = new S3Client({
   region: process.env.AWS_REGION || process.env.AWS_DEFAULT_REGION || "us-east-1",
+  followRegionRedirects: true,
 });
 
 main().catch((error) => {
-  console.error(`\nDeploy failed: ${error.code || error.name || "Error"}`);
+  const errorCode = error.code || error.name || "Error";
+
+  console.error(`\nDeploy failed: ${errorCode}`);
   console.error(error.message);
 
-  if (error.code === "AccessDenied") {
+  if (errorCode === "AccessDenied") {
     console.error(
       `\nThe active AWS credentials were denied during: ${error.deployStep || "S3 sync"}.`
     );
+    console.error(`AWS profile: ${process.env.AWS_PROFILE || "default"}`);
     console.error(
       "They need s3:ListBucket on the bucket plus s3:PutObject and s3:DeleteObject on the bucket objects."
     );
@@ -76,6 +81,10 @@ async function main() {
 
 function getFiles(directory) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    if (ignoredFileNames.has(entry.name)) {
+      return [];
+    }
+
     const entryPath = path.join(directory, entry.name);
     if (entry.isDirectory()) {
       return getFiles(entryPath);
@@ -110,7 +119,7 @@ async function uploadObject({ filePath, key }) {
   const params = {
     Bucket: bucketName,
     Key: key,
-    Body: fs.createReadStream(filePath),
+    Body: fs.readFileSync(filePath),
     ContentType: contentType(filePath),
   };
 
