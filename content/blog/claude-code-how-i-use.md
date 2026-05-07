@@ -2,7 +2,7 @@
 title: "AI Coding Tools: Speed Without the Scars"
 date: "2025-08-20"
 slug: "ai-coding-tools-speed-without-the-scars"
-excerpt: "This is my first blog post. I'll be sharing thoughts on web development, technology, and my projects."
+excerpt: "AI coding tools can make you dramatically faster, or leave you debugging a black box. Here are two rules I've found effective for fast coding without sacrificing quality."
 tags: ["AI", "Software Development"]
 image: /images/blog/hero-claude-code.webp
 alt: "Claude Code terminal"

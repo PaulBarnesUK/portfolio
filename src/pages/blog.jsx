@@ -97,7 +97,7 @@ class BlogPage extends React.Component {
                         </h2>
                         <div className="blog-post-card__meta">
                           <div className="blog-post-card__tags">
-                            {node.frontmatter.tags.join(", ")}
+                            {node.frontmatter.excerpt}
                           </div>
                           <time
                             className="blog-post-card__date"

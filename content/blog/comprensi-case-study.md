@@ -14,8 +14,6 @@ image: /images/blog/predicting-video-difficulty.webp
 alt: "Difficulty ladder showing Spanish videos ranked from easiest to hardest"
 ---
 
-## Intro
-
 YouTube has millions of Spanish videos.
 
 For language learners, that sounds useful. In practice, it creates a different problem: the hard part is not finding Spanish content. The hard part is knowing which videos you can actually understand.
@@ -189,6 +187,8 @@ The features would need to change for other languages and formats, but the core 
 
 > collect human difficulty judgments → convert them into a scale → train a model to predict that scale → integrate the prediction into a useful product experience.
 
-That is the part I hope other people can take inspiration from to help more learners.
+That is the part I hope other people can build on.
 
 If you're interested in knowing more, feel free to reach out to me at paul.barnes.psnl@gmail.com
+
+You can check out Comprensi at https://comprensi.com
