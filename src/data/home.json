@@ -1,19 +1,19 @@
 {
-    "heroSection": {
-        "title": "Hi, I'm Paul.",
-        "copy": "I build things."
-    },
-    "introSection": {
-        "title": "Lorem ipsum dolor sit amet",
-        "copy": "I have over 9 years experience in web development, working in-house as well as with digital and creative agencies.",
-        "myStack": {
-            "title": "My Stack"
-        }
-    },
-    "recentWorkSection": {
-        "title": "My recent work"
-    },
-    "clientsSection": {
-        "title": "I'm proud to have worked with"
+  "heroSection": {
+    "title": "Hi, I'm Paul.",
+    "copy": "I build applied AI products."
+  },
+  "introSection": {
+    "title": "Lorem ipsum dolor sit amet",
+    "copy": "I have over 9 years experience in web development, working in-house as well as with digital and creative agencies.",
+    "myStack": {
+      "title": "My Stack"
     }
+  },
+  "recentWorkSection": {
+    "title": "My recent work"
+  },
+  "clientsSection": {
+    "title": "I'm proud to have worked with"
+  }
 }
