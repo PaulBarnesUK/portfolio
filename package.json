@@ -11,7 +11,7 @@
     "develop": "GATSBY_TELEMETRY_DISABLED=1 GATSBY_FEEDBACK_DISABLED=1 gatsby develop",
     "start": "npm run develop",
     "build": "GATSBY_TELEMETRY_DISABLED=1 GATSBY_FEEDBACK_DISABLED=1 gatsby build",
-    "deploy": "npm run build && AWS_SDK_LOAD_CONFIG=1 node scripts/deploy-s3.js",
+    "deploy": "npm run build && AWS_PROFILE=portfolio-deploy AWS_SDK_LOAD_CONFIG=1 node scripts/deploy-s3.js",
     "serve": "gatsby serve",
     "clean": "GATSBY_TELEMETRY_DISABLED=1 GATSBY_FEEDBACK_DISABLED=1 gatsby clean",
     "typecheck": "tsc --noEmit"

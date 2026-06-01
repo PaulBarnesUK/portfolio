@@ -1,0 +1,28 @@
+.section--legal {
+  text-align: left;
+}
+
+.legal-copy {
+  font-size: 1.1rem;
+  line-height: 1.7;
+
+  h2 {
+    font-size: 1.45rem;
+    font-weight: bold;
+    margin: 2.25rem 0 0.75rem;
+  }
+
+  p {
+    margin: 0 0 1.25rem;
+  }
+
+  a {
+    color: $primaryColor;
+  }
+
+  &__updated {
+    color: lighten($primaryFontColor, 25%);
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+}

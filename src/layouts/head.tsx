@@ -1,10 +1,17 @@
 import React from 'react'
 
-export function Head({ title = "Paul Barnes | Web Developer"}: { title?: string }) {
+export function Head({
+  title = "Paul Barnes | Web Developer",
+  description,
+}: {
+  title?: string
+  description?: string
+}) {
 
   return (
     <>
       <title>{title}</title>
+      {description && <meta name="description" content={description}/>}
       <meta name="msapplication-TileColor" content="#da532c"/>
       <meta name="theme-color" content="#ffffff"/>
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
